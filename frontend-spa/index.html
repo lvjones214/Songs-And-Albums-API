@@ -11,26 +11,44 @@
     <header>
         <img src="/frontend-spa/src/img/marvinDancing.gif" alt="marvinDancing">
         <h1 class="website-title">Marvin's MetalHead's Music</h1>
+        <form method = "post" ><select id="selection">
+            <option value="album">Album </option>
+            <option value= "song">Song</option>
+        </select>
+        </select> <br> <input type="text"placeholder = "Title"> <br> <input type="text" placeholder="Comments"> <br>
+            <input type="text" placeholder="Rating">  <br>
+            <button>submit</button>
+        </form>
     </header>
 
     <div class="song-list">
         <strong><p class="current-song">Current Song</p></strong>
-        <p class="Song 1">Song 1</p>
-        
-        <p class="Song 2">Song 2</p>
-        <p class="Song 3">Song 3</p>
-        <p class="Song 4">Song 4</p>
-        <p class="Song 5">Song 5</p>
-        <p class="Song 6">Song 6</p>
+        <p class="Song-1">Cherub Rock</p>
+        <img class="Song-1-image" src="/frontend-spa/src/img/siamese dream.jpg" alt="siamese-dream-album">
+        <p class="Song-2">Quit</p>
+        <img class="Song-2-image" src="/frontend-spa/src/img/siamese dream.jpg" alt="siamese-dream-album">
+        <p class="Song-3">Today</p>
+        <img class="Song-3-image" src="/frontend-spa/src/img/siamese dream.jpg" alt="siamese-dream-album">
+        <p class="Song-4">Hummer</p>
+        <img class="Song-4-image" src="/frontend-spa/src/img/siamese dream.jpg" alt="siamese-dream-album">
+        <p class="Song-5">Rocket</p>
+        <img class="Song-5-image" src="/frontend-spa/src/img/siamese dream.jpg" alt="siamese-dream-album">
+        <p class="Song-6">Dissarm</p>
+        <img class="Song-6-image" src="/frontend-spa/src/img/siamese dream.jpg" alt="siamese-dream-album">
     </div>
 
     <div class="details">Info
-        <p class="title">Title</p>
+        <p class="title"></p>
         <p class="record-label">Record Label</p>
         <p class="duration">Song Length</p>
         <p class="comments">Comments</p>
+        <form method="post" ><input type="text" placeholder ="Submit a comment"> <input type="submit"></form><br>
+        
+
         <p class="ratings">Ratings</p>
-        <p></p>
+        <form method="POST" ><input type="text" placeholder ="Submit a rating"> <input type="submit"></form><br>
+        <img src="/frontend-spa/src/img/siamese dream.jpg" alt="siamese-dream-album">
+        
 
     </div>
 
