@@ -1,0 +1,15 @@
+html {
+    background-color: burlywood;
+    font-family: Righteous;
+}
+
+.current-song {
+    font-weight: bold;
+}
+
+.song-block {
+    background-color: aquamarine;
+    font-size: large;
+    border-style: solid;
+    border-radius: 5px;
+}

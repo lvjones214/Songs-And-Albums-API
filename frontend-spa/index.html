@@ -7,13 +7,14 @@
     <title>Marvin's MetalHead's Music</title>
     <link rel="stylesheet" href="/frontend-spa/src/css/style.css">
     <link rel="stylesheet" href="/frontend-spa/src/css/layout.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Righteous">
 </head>
 
 <body>
     <header>
-        <img src="/frontend-spa/src/img/marvinDancing.gif" alt="marvinDancing">
-        <h1 class="website-title">Marvin's MetalHead's Music</h1>
-        <form class="new-submission"  method="post"><select id="selection">
+        <img src="/frontend-spa/src/img/marvinDancing.gif" alt="marvinDancing" class="marvin">
+        <h1 class="website-title">Marvin's MetalHeads Music</h1>
+        <form class="new-submission" method="post"><select id="selection">
                 <option value="album">Album </option>
                 <option value="song">Song</option>
             </select>
@@ -25,25 +26,44 @@
     <div class="container">
 
         <div class="song-list">
-            <strong>
-                <p class="current-song">Current Song</p>
-            </strong>
-            <p class="Song-1">Cherub Rock</p>
-            <img class="Song-1-image" src="/frontend-spa/src/img/siamese dream.jpg" alt="siamese-dream-album">
-            <p class="Song-2">Quit</p>
-            <img class="Song-2-image" src="/frontend-spa/src/img/siamese dream.jpg" alt="siamese-dream-album">
-            <p class="Song-3">Today</p>
-            <img class="Song-3-image" src="/frontend-spa/src/img/siamese dream.jpg" alt="siamese-dream-album">
-            <p class="Song-4">Hummer</p>
-            <img class="Song-4-image" src="/frontend-spa/src/img/siamese dream.jpg" alt="siamese-dream-album">
-            <p class="Song-5">Rocket</p>
-            <img class="Song-5-image" src="/frontend-spa/src/img/siamese dream.jpg" alt="siamese-dream-album">
-            <p class="Song-6">Dissarm</p>
-            <img class="Song-6-image" src="/frontend-spa/src/img/siamese dream.jpg" alt="siamese-dream-album">
+            <div class="song-block">
+                <p class="current-song">"Thuggish Ruggish Bone" - Bone Thugs-N-Harmony</p>
+                <img class="current-song-img" src="/frontend-spa/src/img/siamese dream.jpg" alt="siamese-dream-album">
+            </div>
+
+            <div class="song-block">
+                <p class="Song-1">"Cherub Rock" - Smashing Pumpkins</p>
+                <img class="Song-1-image" src="/frontend-spa/src/img/siamese dream.jpg" alt="siamese-dream-album">
+            </div>
+
+            <div class="song-block">
+                <p class="Song-2">"Despacito" - Luis Fonsi feat Justin Bieber</p>
+                <img class="Song-2-image" src="/frontend-spa/src/img/siamese dream.jpg" alt="siamese-dream-album">
+            </div>
+
+            <div class="song-block">
+                <p class="Song-3">"Crocodile Rock" - Elton John</p>
+                <img class="Song-3-image" src="/frontend-spa/src/img/siamese dream.jpg" alt="siamese-dream-album">
+            </div>
+
+            <div class="song-block">
+                <p class="Song-4">"Bohemian Rhapsody" - Queen</p>
+                <img class="Song-4-image" src="/frontend-spa/src/img/siamese dream.jpg" alt="siamese-dream-album">
+            </div>
+
+            <div class="song-block">
+                <p class="Song-5">"Classical Gas" - Mason Williams</p>
+                <img class="Song-5-image" src="/frontend-spa/src/img/siamese dream.jpg" alt="siamese-dream-album">
+            </div>
+
+            <div class="song-block">
+                <p class="Song-6">"Duality" - Slipknot</p>
+                <img class="Song-6-image" src="/frontend-spa/src/img/siamese dream.jpg" alt="siamese-dream-album">
+            </div>
         </div>
 
         <div class="details">Info
-            <p class="title"></p>
+            <p class="title">Title</p>
             <p class="record-label">Record Label</p>
             <p class="duration">Song Length</p>
             <p class="comments">Comments</p>
