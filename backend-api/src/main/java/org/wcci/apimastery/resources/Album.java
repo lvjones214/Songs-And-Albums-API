@@ -12,8 +12,8 @@ public class Album {
     @GeneratedValue
     private Long id;
 
-    public Album(String name, String albumImage, String albumSongs, String albumLabel, String albumComments, String albumName) {
-
+    public Album( String albumName) {
+        this.albumName = albumName;
     }
 
 

@@ -21,7 +21,7 @@ public class JpaWiringTest {
 
     @Test
     public void albumRepoShouldSaveAndRetrieveAlbumObjects() {
-    Album testAlbum = new Album("albumName", "albumImage", "albumSongs", "albumLabel", "albumComments", "albumRatings");
+    Album testAlbum = new Album("albumName");
     albumRepo.save(testAlbum);
     flushAndClear();
     Album retrievedAlbum = albumRepo.findById(testAlbum.getId()).get();
