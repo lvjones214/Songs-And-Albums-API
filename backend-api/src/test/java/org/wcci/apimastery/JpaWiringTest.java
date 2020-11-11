@@ -1,3 +1,6 @@
+package org.wcci.apimastery;
+
+import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
@@ -10,8 +13,9 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 @DataJpaTest
 public class JpaWiringTest {
-
+    @Autowired
     private AlbumRepository albumRepo;
+    @Autowired
     private TestEntityManager entityManager;
 
     private void flushAndClear() {
@@ -25,7 +29,7 @@ public class JpaWiringTest {
     albumRepo.save(testAlbum);
     flushAndClear();
     Album retrievedAlbum = albumRepo.findById(testAlbum.getId()).get();
-    assertThat(retrievedAlbum).isEqualTo(testAlbum);
+    Assertions.assertThat(retrievedAlbum).isEqualTo(testAlbum);
     }
 
 
