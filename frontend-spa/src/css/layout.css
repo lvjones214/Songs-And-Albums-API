@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 1000px;
+    width: 90%;
+}
+
+header {
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 50px;
+    
+}
+.new-submission{
+    justify-self: right;
+}
+
+.website-title{
+    justify-self: center;
+}
+
