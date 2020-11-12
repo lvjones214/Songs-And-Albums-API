@@ -1,6 +1,13 @@
+:root {
+    --dark-blue: #0F1923;
+    --white: #ECE8E1;
+    --red: #FF4655;
+}
+
 html {
-    background-color: burlywood;
+    background-color: var(--white);
     font-family: Righteous;
+    color: var(--dark-blue);
 }
 
 .current-song {
@@ -8,8 +15,16 @@ html {
 }
 
 .song-block {
-    background-color: aquamarine;
+    background-color: var(--red);
     font-size: large;
     border-style: solid;
     border-radius: 5px;
+    border-color: var(--dark-blue);
+}
+
+.details {
+    background-color: var(--dark-blue);
+    color: var(--white);
+    border-style: solid;
+    border-radius: 7px;
 }
