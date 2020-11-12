@@ -6,7 +6,11 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
 import org.springframework.boot.test.autoconfigure.orm.jpa.TestEntityManager;
 import org.wcci.apimastery.resources.Album;
+import org.wcci.apimastery.resources.Song;
 import org.wcci.apimastery.storage.AlbumRepository;
+import org.wcci.apimastery.storage.SongRepository;
+
+import java.util.Properties;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
@@ -17,20 +21,27 @@ public class JpaWiringTest {
     private AlbumRepository albumRepo;
     @Autowired
     private TestEntityManager entityManager;
+    private SongRepository songRepo;
 
     private void flushAndClear() {
         entityManager.flush();
         entityManager.clear();
     }
-
     @Test
-    public void albumRepoShouldSaveAndRetrieveAlbumObjects() {
+    public void albumRepoShouldBeAbleToSaveAndRetrieveAlbumObjects() {
     Album testAlbum = new Album("albumName");
     albumRepo.save(testAlbum);
     flushAndClear();
     Album retrievedAlbum = albumRepo.findById(testAlbum.getId()).get();
     Assertions.assertThat(retrievedAlbum).isEqualTo(testAlbum);
     }
-
+    @Test
+    public void songRepoShouldBeAbleToSaveAndRetrieveAlbumObjects(){
+        Song testSong = new Song ("songName");
+        songRepo.save(testSong);
+        flushAndClear();
+        Song retrievedSong = songRepo.findById(testSong.getId()).get();
+        Assertions.assertThat(retrievedSong).isEqualTo(testSong);
+    }
 
 }
