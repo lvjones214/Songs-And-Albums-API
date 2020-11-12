@@ -18,14 +18,12 @@ public class Song {
     @GeneratedValue
     private Long id;
 
-    protected Song(){}
 
-    public Song (Album album, String songName, String artist, String playTime){
-        this.album = album;
+
+    public Song (String songName){
         this.songName = songName;
-        this.artist = artist;
-        this.playTime = playTime;
     }
+    protected Song(){}
 
     public Album album() { return album;}
 

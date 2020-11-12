@@ -21,6 +21,7 @@ public class JpaWiringTest {
     private AlbumRepository albumRepo;
     @Autowired
     private TestEntityManager entityManager;
+   @Autowired
     private SongRepository songRepo;
 
     private void flushAndClear() {
@@ -36,7 +37,7 @@ public class JpaWiringTest {
     Assertions.assertThat(retrievedAlbum).isEqualTo(testAlbum);
     }
     @Test
-    public void songRepoShouldBeAbleToSaveAndRetrieveAlbumObjects(){
+    public void songRepoShouldBeAbleToSaveAndRetrieveSongObjects(){
         Song testSong = new Song ("songName");
         songRepo.save(testSong);
         flushAndClear();
