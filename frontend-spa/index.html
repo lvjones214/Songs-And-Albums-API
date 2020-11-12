@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Marvin's MetalHead's Music</title>
+    <title>Marvin MetalHead's Music</title>
     <link rel="stylesheet" href="/frontend-spa/src/css/style.css">
     <link rel="stylesheet" href="/frontend-spa/src/css/layout.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Righteous">
@@ -26,6 +26,7 @@
     <div class="container">
 
         <div class="song-list">
+
             <div class="song-block">
                 <p class="current-song">"Thuggish Ruggish Bone" - Bone Thugs-N-Harmony</p>
                 <img class="current-song-img" src="/frontend-spa/src/img/siamese dream.jpg" alt="siamese-dream-album">
@@ -60,6 +61,7 @@
                 <p class="Song-6">"Duality" - Slipknot</p>
                 <img class="Song-6-image" src="/frontend-spa/src/img/siamese dream.jpg" alt="siamese-dream-album">
             </div>
+
         </div>
 
         <div class="details">
@@ -72,17 +74,28 @@
             <img src="/frontend-spa/src/img/siamese dream.jpg" alt="siamese-dream-album" class="album-cover-img">
 
             <div class="comments-block">
-                <p class="comments">Comments</p>
-                <form method="post"><input type="text" placeholder="Submit a comment"> <input type="submit"></form><br>
+                <p class="comments">Comments:</p>
+                <p>This album was crap.</p>
+                <p>This album was bull.</p>
+                <p>Meh.</p>
+                
             </div>
-
+           
             <div class="ratings-block">
-                <p class="ratings">Ratings</p>
-                <form method="POST"><input type="text" placeholder="Submit a rating"> <input type="submit"></form><br>
-            </div>
-        </div>
+                <p class="ratings">Ratings:</p>
+                <p>This album was crap.</p>
+                <p>This album was bull.</p>
+                <p>Meh.</p>
+               
+           </div>
 
-    </div>
+            <form class="comments-ratings-form" method="post"><input type="text" placeholder="Submit a comment"> <input type="submit"></form>
+            <form class="comments-ratings-form" method="POST"><input type="text" placeholder="Submit a rating"> <input type="submit"></form>
+
+       </div>
+ </div>
+
+    
 </body>
 
 </html>

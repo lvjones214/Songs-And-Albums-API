@@ -16,7 +16,7 @@ html {
 
 .song-block {
     background-color: var(--red);
-    font-size: large;
+    font-size: x-large;
     border-style: solid;
     border-radius: 5px;
     border-color: var(--dark-blue);

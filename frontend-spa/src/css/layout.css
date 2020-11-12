@@ -55,8 +55,10 @@ header {
 
 .details {
     display: grid;
-    grid-template-rows: repeat(2, 3fr);
+    grid-template-rows: 1, 100px, repeat(3, 1fr);
     grid-template-columns: repeat(2, 1fr);
+    padding: 2rem;
+    margin: 7px;
 }
 
 h2 {
@@ -65,4 +67,8 @@ h2 {
     grid-column-end: 3;
     align-items: center;
     text-align: center;
+}
+
+.comments-ratings-form{   
+    margin-top: 1rem;
 }
