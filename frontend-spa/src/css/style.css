@@ -27,4 +27,5 @@ html {
     color: var(--white);
     border-style: solid;
     border-radius: 7px;
+    font-size: larger;
 }

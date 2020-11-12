@@ -13,7 +13,9 @@
 }
 
 header {
-    padding: 2rem;
+    padding: 1.5rem;
+    margin-left: 7px;
+    margin-right: 7px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 50px;
@@ -41,8 +43,8 @@ header {
 }
 
 .song-block p {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .song-block img {
@@ -57,8 +59,14 @@ header {
     display: grid;
     grid-template-rows: 1, 100px, repeat(3, 1fr);
     grid-template-columns: repeat(2, 1fr);
+    align-items: center;
     padding: 2rem;
     margin: 7px;
+}
+
+.details img {
+    width: 250px;
+    justify-self: right;
 }
 
 h2 {
@@ -69,6 +77,10 @@ h2 {
     text-align: center;
 }
 
-.comments-ratings-form{   
-    margin-top: 1rem;
+.comments-ratings-form2 {
+    justify-self: right;
+}
+
+.ratings-block {
+    justify-self: right;
 }
