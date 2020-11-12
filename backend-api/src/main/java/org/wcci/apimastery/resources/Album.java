@@ -15,7 +15,7 @@ public class Album {
 
     protected Album(){}
 
-    public Album( String albumName) {
+    public Album(String albumName, String image, String artist, String recordLabel, String songList) {
         this.albumName = albumName;
     }
 
