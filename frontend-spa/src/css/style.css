@@ -20,6 +20,19 @@ html {
     border-style: solid;
     border-radius: 5px;
     border-color: var(--dark-blue);
+    letter-spacing: 1.5px;
+}
+
+.song-block :hover,
+.song-block :active {
+    text-shadow: 2px 2px 3px black;
+    cursor: pointer;
+}
+
+.song-block img:hover,
+.song-block img:active {
+    box-shadow: 2.5px 2.5px 5px black;
+    cursor: pointer;
 }
 
 .details {
@@ -28,4 +41,9 @@ html {
     border-style: solid;
     border-radius: 7px;
     font-size: larger;
+    letter-spacing: 1.5px;
+}
+
+.website-title {
+    letter-spacing: 2px;
 }
