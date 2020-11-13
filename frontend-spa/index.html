@@ -4,11 +4,116 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Module 5 Project</title>
+    <title>Marvin MetalHead's Music</title>
+    <link rel="stylesheet" href="/frontend-spa/src/css/style.css">
+    <link rel="stylesheet" href="/frontend-spa/src/css/layout.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Righteous">
+    <link rel="icon" type="image" href="./src/img/hitchhiker-symbol-icon.png">
 </head>
 
 <body>
+    <header>
+        <img src="/frontend-spa/src/img/marvinDancing.gif" alt="marvinDancing" class="marvin">
+        <h1 class="website-title">Marvin's MetalHeads Music</h1>
+        <button class="menu-button"><img src="/frontend-spa/src/img/addson.png"></button>
 
+        <div class="backdrop"></div>
+        <div class="modal">
+            <div class="modal-actions">
+                <button type="button" class="exit">&times;</button></div>
+
+                <form class="new-submission" method="post"><select id="selection">
+                        <option value="album">Album </option>
+                        <option value="song">Song</option>
+                    </select>
+                    </select> <br> <input type="text" placeholder="Title"> <br> <input type="text"
+                        placeholder="Comments"> <br>
+                    <input type="text" placeholder="Rating"> <br>
+                    <button class="form-submit">submit</button>
+                </form>
+        </div>
+
+
+    </header>
+    <div class="container">
+
+        <div class="song-list">
+
+            <div class="song-block">
+                <p class="current-song">"Thuggish Ruggish Bone" - Bone Thugs-N-Harmony</p>
+                <img class="current-song-img" src="/frontend-spa/src/img/bonet.jpg" alt="siamese-dream-album">
+            </div>
+
+            <div class="song-block">
+                <p class="Song-1">"Cherub Rock" - Smashing Pumpkins</p>
+                <img class="Song-1-image" src="/frontend-spa/src/img/siamese dream.jpg" alt="siamese-dream-album">
+            </div>
+
+            <div class="song-block">
+                <p class="Song-2">"Despacito" - Luis Fonsi feat Justin Bieber</p>
+                <img class="Song-2-image" src="/frontend-spa/src/img/despacito.png" alt="siamese-dream-album">
+            </div>
+
+            <div class="song-block">
+                <p class="Song-3">"Crocodile Rock" - Elton John</p>
+                <img class="Song-3-image" src="/frontend-spa/src/img/crocodilerock.jpg" alt="siamese-dream-album">
+            </div>
+
+            <div class="song-block">
+                <p class="Song-4">"Bohemian Rhapsody" - Queen</p>
+                <img class="Song-4-image" src="/frontend-spa/src/img/anightattheopera.jpg" alt="siamese-dream-album">
+            </div>
+
+            <div class="song-block">
+                <p class="Song-5">"Classical Gas" - Mason Williams</p>
+                <img class="Song-5-image" src="/frontend-spa/src/img/masonwilliams.jpg" alt="siamese-dream-album">
+            </div>
+
+            <div class="song-block">
+                <p class="Song-6">"Duality" - Slipknot</p>
+                <img class="Song-6-image" src="/frontend-spa/src/img/slipknot.jpg" alt="siamese-dream-album">
+            </div>
+
+        </div>
+
+        <div class="details">
+            <h2>About</h2>
+            <div class="song-info">
+                <p class="title">Song: Killing In The Name</p>
+                <p class="album">Album: Rage Against The Machine</p>
+                <p class="artist">Artist: Rage Against The Machine</p>
+                <p class="record-label">Label: Sony Music Entertainment</p>
+                <p class="duration">Length: 5:14</p>
+            </div>
+            <img src="/frontend-spa/src/img/ratm_rageagainst_cd (1).jpg" alt="rage-against-the-machine-album"
+                class="album-cover-img">
+
+            <div class="comments-block">
+                <h3 class="comments">Comments:</h3>
+                <p>Classic album</p>
+                <p>This album takes me back to my angsty teen years!</p>
+                <p>Super great song, love it!</p>
+                <p>Meh.</p>
+
+            </div>
+
+            <div class="ratings-block">
+                <h3 class="ratings">Ratings:</h3>
+                <p>This album was crap. But it was a super good album, so idfk dude</p>
+                <p>This album was bull.</p>
+                <p>Meh.</p>
+
+            </div>
+
+            <form class="comments-ratings-form1" method="post"><input type="text" placeholder="Submit a comment"> <input
+                    type="submit"></form>
+            <form class="comments-ratings-form2" method="POST"><input type="text" placeholder="Submit a rating"> <input
+                    type="submit"></form>
+
+        </div>
+    </div>
+
+    <script src="/frontend-spa/src/js/app.js"></script>
 </body>
 
 </html>

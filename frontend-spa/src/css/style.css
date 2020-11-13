@@ -1,0 +1,72 @@
+:root {
+    --dark-blue: #0F1923;
+    --white: #ECE8E1;
+    --red: #FF4655;
+}
+
+html {
+    background-color: var(--white);
+    font-family: Righteous;
+    color: var(--dark-blue);
+}
+
+.current-song {
+    font-weight: bold;
+}
+
+.song-block {
+    background-color: var(--red);
+    font-size: x-large;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: var(--dark-blue);
+    letter-spacing: 1.5px;
+}
+
+.song-block :hover,
+.song-block :active {
+    text-shadow: 2px 2px 3px black;
+    cursor: pointer;
+}
+
+.song-block img:hover,
+.song-block img:active {
+    box-shadow: 2.5px 2.5px 5px black;
+    cursor: pointer;
+}
+
+.details {
+    background-color: var(--dark-blue);
+    color: var(--white);
+    border-style: solid;
+    border-radius: 7px;
+    font-size: larger;
+    letter-spacing: 1.5px;
+}
+
+.website-title {
+    letter-spacing: 2px;
+}
+
+input[type=text]{
+    width: 80%;
+    padding: 1rem;
+    border: none;
+    border-bottom:2px solid var(--dark-blue); 
+    background-color: var(--red);
+    margin: 15px;
+}
+
+input[type=text]:focus{
+    background-color: var(--white);
+}
+
+input[type=text]::placeholder
+{
+    color: var(--dark-blue);
+}
+
+.form-submit{
+    background-color: var(--dark-blue);
+    
+}
