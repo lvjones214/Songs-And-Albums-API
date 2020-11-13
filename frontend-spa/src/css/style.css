@@ -47,3 +47,26 @@ html {
 .website-title {
     letter-spacing: 2px;
 }
+
+input[type=text]{
+    width: 80%;
+    padding: 1rem;
+    border: none;
+    border-bottom:2px solid var(--dark-blue); 
+    background-color: var(--red);
+    margin: 15px;
+}
+
+input[type=text]:focus{
+    background-color: var(--white);
+}
+
+input[type=text]::placeholder
+{
+    color: var(--dark-blue);
+}
+
+.form-submit{
+    background-color: var(--dark-blue);
+    
+}

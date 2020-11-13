@@ -10,6 +10,7 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     max-width: 100vw;
+    max-height: 75vh;
 }
 
 header {
@@ -21,8 +22,9 @@ header {
     grid-column-gap: 50px;
 }
 
-.new-submission {
+.menu-button{
     justify-self: right;
+
 }
 
 .website-title {
@@ -86,3 +88,40 @@ h2 {
 .ratings-block {
     justify-self: right;
 }
+
+
+.backdrop{
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left:0;
+    background: rgba(0, 0,0, 0.5);  
+    z-index: 100;
+}
+
+.modal{
+    display: none;
+    position: fixed;
+    z-index: 200;
+    top: 20%;
+    left: 25%;
+    width: 50%;
+    height: 50%;
+    background: var(--red);
+    box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.568);
+    padding: 1rem;
+}
+
+.modal-actions{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.modal-actions button{
+    font-size: 15px;
+    padding: 3px 7px;
+    border-radius: 5px;
+}
+
