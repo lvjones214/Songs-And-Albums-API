@@ -34,6 +34,15 @@ public class JpaWiringTest {
     Album retrievedAlbum = albumRepo.findById(testAlbum.getId()).get();
     Assertions.assertThat(retrievedAlbum).isEqualTo(testAlbum);
     }
-
+@Test
+    public void albumShouldHaveManySongs(){
+    Album testAlbum = new Album("albumName","image" ,"artist" ,"label");
+    albumRepo.save(testAlbum);
+    Song testSong = new Song(testAlbum, "testSong", "testImage", "testTime");
+    songRepo.save(testSong);
+    flushAndClear();
+    Album retrievedAlbum = albumRepo.findById(testAlbum.getId()).get();
+    assertThat(retrievedAlbum.getSongs()).contains(testSong);
+}
 
 }

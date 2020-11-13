@@ -21,8 +21,11 @@ public class Song {
 
 
 
-    public Song(String albumTitle, String songName, String image, String playTime){
+    public Song(Album album, String songName, String image, String playTime){
+        this.album = album;
         this.songName = songName;
+        this.image = image;
+        this.playTime = playTime;
     }
     protected Song(){}
 

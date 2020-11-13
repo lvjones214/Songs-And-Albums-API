@@ -15,7 +15,7 @@ public class Album {
     private String image;
     private String artist;
     private String recordLabel;
-    @OneToMany
+    @OneToMany (mappedBy = "album")
     private Set<Song> songs;
 
     @Id
@@ -33,6 +33,25 @@ public class Album {
         this.recordLabel = recordLabel;
     }
 
+    public String getAlbumName() {
+        return albumName;
+    }
+
+    public String getImage() {
+        return image;
+    }
+
+    public String getArtist() {
+        return artist;
+    }
+
+    public String getRecordLabel() {
+        return recordLabel;
+    }
+
+    public Set<Song> getSongs() {
+        return songs;
+    }
 
     public Long getId() { return id;}
 
