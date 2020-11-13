@@ -14,13 +14,14 @@ public class Song {
     @Lob
     private String artist;
     private String playTime;
+    private String image;
     @Id
     @GeneratedValue
     private Long id;
 
 
 
-    public Song (String songName){
+    public Song(String albumTitle, String songName, String image, String playTime){
         this.songName = songName;
     }
     protected Song(){}

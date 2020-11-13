@@ -28,7 +28,7 @@ public class JpaWiringTest {
     }
     @Test
     public void albumRepoShouldBeAbleToSaveAndRetrieveAlbumObjects() {
-    Album testAlbum = new Album("albumName", , , , );
+    Album testAlbum = new Album("albumName","image" ,"name" ,"label" ,"song" );
     albumRepo.save(testAlbum);
     flushAndClear();
     Album retrievedAlbum = albumRepo.findById(testAlbum.getId()).get();
@@ -36,7 +36,7 @@ public class JpaWiringTest {
     }
     @Test
     public void songRepoShouldBeAbleToSaveAndRetrieveSongObjects(){
-        Song testSong = new Song ("songName");
+        Song testSong = new Song ("songName", , , );
         songRepo.save(testSong);
         flushAndClear();
         Song retrievedSong = songRepo.findById(testSong.getId()).get();

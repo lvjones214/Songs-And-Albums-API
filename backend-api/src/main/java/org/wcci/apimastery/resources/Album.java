@@ -3,11 +3,20 @@ package org.wcci.apimastery.resources;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
+import java.util.Collection;
+import java.util.List;
 import java.util.Objects;
+import java.util.Set;
 
 @Entity
 public class Album {
     private String albumName;
+    private String image;
+    private String artist;
+    private String recordLabel;
+    @OneToMany
+    private Set<Song> songs;
 
     @Id
     @GeneratedValue
@@ -15,8 +24,16 @@ public class Album {
 
     protected Album(){}
 
-    public Album(String albumName, String image, String artist, String recordLabel, String songList) {
+
+
+    public Album(String albumName, String image, String artist, String recordLabel, Song...songs) {
         this.albumName = albumName;
+        this.image = image;
+        this.artist = artist;
+        this.recordLabel = recordLabel;
+        this.songs = Set.of(songs);
+
+
     }
 
 
