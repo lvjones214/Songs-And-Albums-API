@@ -26,14 +26,11 @@ public class Album {
 
 
 
-    public Album(String albumName, String image, String artist, String recordLabel, Song...songs) {
+    public Album(String albumName, String image, String artist, String recordLabel) {
         this.albumName = albumName;
         this.image = image;
         this.artist = artist;
         this.recordLabel = recordLabel;
-        this.songs = Set.of(songs);
-
-
     }
 
 

@@ -28,19 +28,12 @@ public class JpaWiringTest {
     }
     @Test
     public void albumRepoShouldBeAbleToSaveAndRetrieveAlbumObjects() {
-    Album testAlbum = new Album("albumName","image" ,"name" ,"label" ,"song" );
+    Album testAlbum = new Album("albumName","image" ,"artist" ,"label");
     albumRepo.save(testAlbum);
     flushAndClear();
     Album retrievedAlbum = albumRepo.findById(testAlbum.getId()).get();
     Assertions.assertThat(retrievedAlbum).isEqualTo(testAlbum);
     }
-    @Test
-    public void songRepoShouldBeAbleToSaveAndRetrieveSongObjects(){
-        Song testSong = new Song ("songName", , , );
-        songRepo.save(testSong);
-        flushAndClear();
-        Song retrievedSong = songRepo.findById(testSong.getId()).get();
-        Assertions.assertThat(retrievedSong).isEqualTo(testSong);
-    }
+
 
 }
