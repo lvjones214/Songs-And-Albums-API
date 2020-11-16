@@ -68,7 +68,8 @@ header {
 }
 
 .details img {
-    width: 250px;
+    width: 300px;
+    height: 300px;
     justify-self: right;
     border-radius: 7px;
 }
@@ -123,5 +124,10 @@ h2 {
     font-size: 15px;
     padding: 3px 7px;
     border-radius: 5px;
+}
+
+.form-submit{
+    float: right;
+
 }
 

@@ -22,15 +22,16 @@
             <div class="modal-actions">
                 <button type="button" class="exit">&times;</button></div>
 
-                <form class="new-submission" method="post"><select id="selection">
-                        <option value="album">Album </option>
-                        <option value="song">Song</option>
-                    </select>
-                    </select> <br> <input type="text" placeholder="Title"> <br> <input type="text"
-                        placeholder="Comments"> <br>
-                    <input type="text" placeholder="Rating"> <br>
-                    <button class="form-submit">submit</button>
-                </form>
+            <form class="new-submission" method="post"><select id="selection">
+                    <option value="song">Song</option>
+                </select>
+                <br>
+                <input type="text" placeholder="Album"> <br>
+                <input type="text" placeholder="Song Title"> <br>
+                <input type="text" placeholder="Artist"> <br>
+                <input type="text" placeholder="Duration"> <br>
+                <button class="form-submit">Submit</button>
+            </form>
         </div>
 
 
@@ -85,8 +86,26 @@
                 <p class="record-label">Label: Sony Music Entertainment</p>
                 <p class="duration">Length: 5:14</p>
             </div>
-            <img src="/frontend-spa/src/img/ratm_rageagainst_cd (1).jpg" alt="rage-against-the-machine-album"
-                class="album-cover-img">
+            <div class="flip-card">
+                <div class="flip-card-inner">
+
+                    <div class="flip-card-front">
+                        <img src="/frontend-spa/src/img/ratm_rageagainst_cd (1).jpg"
+                            alt="rage-against-the-machine-album" class="album-cover-img">
+                    </div>
+                    <div class="flip-card-back">
+                        <ul class="song-card-list">
+                            <li>Song 1</li>
+                            <li>Song 2</li>
+                            <li>Song 3</li>
+                            <li>Song 4</li>
+                            <li>Song 5</li>
+                        </ul>
+                    </div>
+
+
+                </div>
+            </div>
 
             <div class="comments-block">
                 <h3 class="comments">Comments:</h3>

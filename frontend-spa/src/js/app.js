@@ -16,5 +16,6 @@ exitButton.addEventListener("click", closeModal);
 backdrop.addEventListener("click", closeModal);
 
 
-// const addMusicButton = document.querySelector(".menu-button");
-// addMusicButton='<img src="/frontend-spa/src/img/addson.png" height="200px width="200px>'
+
+
+
