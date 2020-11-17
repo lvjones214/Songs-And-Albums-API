@@ -13,4 +13,10 @@ const songList = function(songs) {
         let songElementImage = document.createElement("img")
         songElementImage.classList.add("current-song-img")
     });
+
+    return songList;
+}
+
+export{
+    songList
 }
