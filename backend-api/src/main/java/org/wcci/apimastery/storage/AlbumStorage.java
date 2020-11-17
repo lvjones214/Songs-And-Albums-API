@@ -19,4 +19,7 @@ public class AlbumStorage {
     public void saveAlbum(Album albumToSave) {
         albumRepo.save(albumToSave);
     }
+    public Iterable<Album>retrieveAllAblbums(){
+        return albumRepo.findAll();
+    }
 }
