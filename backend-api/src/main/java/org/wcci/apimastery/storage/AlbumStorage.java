@@ -15,4 +15,8 @@ public class AlbumStorage {
     public Album retrieveAlbumById(Long id){
         return albumRepo.findById(id).get();
     }
+
+    public void saveAlbum(Album albumToSave) {
+        albumRepo.save(albumToSave);
+    }
 }
