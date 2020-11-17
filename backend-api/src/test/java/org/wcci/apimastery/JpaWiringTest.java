@@ -38,7 +38,7 @@ public class JpaWiringTest {
     public void albumShouldHaveManySongs(){
     Album testAlbum = new Album("albumName","image" ,"artist" ,"label");
     albumRepo.save(testAlbum);
-    Song testSong = new Song(testAlbum, "testSong", "testImage", "testTime");
+    Song testSong = new Song(testAlbum, "testSong", "testImage", "testTime", "testArtist");
     songRepo.save(testSong);
     flushAndClear();
     Album retrievedAlbum = albumRepo.findById(testAlbum.getId()).get();
