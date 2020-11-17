@@ -18,5 +18,8 @@ public class AlbumController {
         return albumStorage.retrieveAllAblbums();
 }
 
+//@GetMapping("/api/albums/{id}")
+//    public Album retrieve
+
 
 }

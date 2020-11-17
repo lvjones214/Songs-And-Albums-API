@@ -2,9 +2,9 @@
 GET http://localhost:8080/api/albums
 Accept: application/json
 
-#### Get an album with the given id
-#GET localhost:8080/api/albums/1
-#
+### Get an album with the given id
+GET localhost:8080/api/albums/1
+
 #### Delete a album with the given id.
 #DELETE localhost:8080/api/albums/1
 #
