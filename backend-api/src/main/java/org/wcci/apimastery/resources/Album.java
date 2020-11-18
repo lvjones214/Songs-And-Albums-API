@@ -1,10 +1,7 @@
 package org.wcci.apimastery.resources;
 
 import javax.persistence.*;
-import java.util.Collection;
-import java.util.List;
-import java.util.Objects;
-import java.util.Set;
+import java.util.*;
 
 @Entity
 public class Album {
@@ -13,7 +10,7 @@ public class Album {
     private String artist;
     private String recordLabel;
     @OneToMany (mappedBy = "album", cascade = CascadeType.ALL, orphanRemoval = true)
-    private Set<Song> songs;
+    private Set<Song> songs = Collections.emptySet();
 
     @Id
     @GeneratedValue
