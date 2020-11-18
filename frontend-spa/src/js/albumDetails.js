@@ -1,15 +1,15 @@
 const albumDetails = function(album) {
     const albumDetails = document.querySelector(".details");
 
+    const albumInfo = document.createElement("div");
+    albumInfo.classList.add("album-info");
+    albumDetails.prepend(albumInfo);
+
     const detailsHeader = document.createElement("h2");
     detailsHeader.innerText = `About: ${album.albumName}`;
 
     albumDetails.prepend(detailsHeader);
-    
-    const albumInfo = document.createElement("div");
-    albumInfo.classList.add("album-info");
-    albumDetails.appendChild(albumInfo);
-        
+            
         let albumElementName = document.createElement("p")
         albumElementName.classList.add("album-name")
         albumElementName.innerText = `Album Name: ${album.albumName}`
@@ -24,7 +24,7 @@ const albumDetails = function(album) {
         albumInfo.appendChild(albumElementName);
         albumInfo.appendChild(albumElementArtist);
         albumInfo.appendChild(albumElementLabel);
-
+       
 
         // let albumElementFlipCard = document.createElement("div");
         // albumElementFlipCard.classList.add("flip-card");
