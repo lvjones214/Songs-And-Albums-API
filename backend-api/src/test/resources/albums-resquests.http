@@ -5,10 +5,11 @@ Accept: application/json
 ### Get an album with the given id
 GET localhost:8080/api/albums/1
 
-#### Delete a album with the given id.
-#DELETE localhost:8080/api/albums/1
+### Delete a album with the given id.
+DELETE localhost:8080/api/albums/1
 
-###Post a new song
+
+###Post a new album
 POST http://localhost:8080/api/albums
 Content-Type: application/json
 
@@ -20,13 +21,12 @@ Content-Type: application/json
 }
 
 ### Add a Song
-PUT http://localhost:8080/api/songs
+PATCH http://localhost:8080/api/albums/1/songs
 Content-Type: application/json
 
 {
-  "album": "New Album",
   "songName": "New Song",
   "image": "New Image",
-  "playtime": "New Playtime",
+  "playTime": "New Playtime",
   "artist": "New Artist"
 }

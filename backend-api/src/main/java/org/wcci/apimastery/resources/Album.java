@@ -10,7 +10,7 @@ public class Album {
     private String artist;
     private String recordLabel;
     @OneToMany (mappedBy = "album", cascade = CascadeType.ALL, orphanRemoval = true)
-    private Set<Song> songs = Collections.emptySet();
+    private Set<Song> songs = new LinkedHashSet<>();
 
     @Id
     @GeneratedValue
