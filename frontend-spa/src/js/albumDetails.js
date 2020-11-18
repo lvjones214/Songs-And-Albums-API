@@ -24,17 +24,6 @@ const albumDetails = function(album) {
         albumInfo.appendChild(albumElementArtist);
         albumInfo.appendChild(albumElementLabel);
        
-
-
-        // let albumElementFlipCard = document.querySelector("flip-card");
-        // albumElementFlipCard.insertAdjacentElement("afterbegin", albumElementFlipCardInner);
-        // albumElementFlipCardInner.insertAdjacentElement("beforeend", albumElementFlipCardFront);
-        // let albumElementFlipCardInner = document.createElement("div");
-        // albumElementFlipCardInner.classList.add("flip-card-inner");
-
-        // let albumElementFlipCardFront = document.createElement("div");
-        // albumElementFlipCardFront.classList.add("flip-card-front");
-
         let albumElementFlipCard = document.createElement("div");
         albumElementFlipCard.classList.add("flip-card");
         albumInfo.appendChild(albumElementFlipCard);
@@ -47,14 +36,15 @@ const albumDetails = function(album) {
         albumElementFlipCardFront.classList.add("flip-card-front");
         albumElementFlipCardInner.appendChild(albumElementFlipCardFront);
 
-        // let albumElementImage = document.createElement("img");
-        // albumElementImage.classList.add("album-cover-img");
-        // albumElementImage.innerHTML= `src = ${album.image} alt="unavailable"`
-        // albumElementFlipCardFront.appendChild(albumElementImage);
+        let albumElementImage = document.createElement("img");
+        albumElementImage.classList.add("album-cover-img");
+        albumElementImage.setAttribute("src", album.image)
+        albumElementImage.setAttribute("alt", "unavailable");
+        albumElementFlipCardFront.appendChild(albumElementImage);
 
         let albumElementFlipCardBack = document.createElement("div");
         albumElementFlipCardBack.classList.add("flip-card-back");
-        albumElementFlipCardFront.appendChild(albumElementFlipCardBack);
+        albumElementFlipCardInner.appendChild(albumElementFlipCardBack);
 
         let albumElementSongCardList = document.createElement("ul");
         albumElementSongCardList.classList.add("song-card-list");
@@ -66,9 +56,13 @@ const albumDetails = function(album) {
             albumElementSongCardList.appendChild(albumElementSongCardItems);
         });
 
+    // const commentsBlock = document.createElement("div");
+    // commentsBlock.classList.add("comments-block");
 
 
     return albumDetails;
+
+ 
 }
 
 export{
