@@ -1,9 +1,6 @@
 package org.wcci.apimastery;
 
-import org.springframework.web.bind.annotation.DeleteMapping;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 import org.wcci.apimastery.resources.Album;
 import org.wcci.apimastery.storage.AlbumStorage;
 
@@ -31,5 +28,9 @@ public class AlbumController {
         return albumStorage.retrieveAllAlbums();
     }
 
-
+    @PostMapping("/api/albums")
+    public Iterable<Album> addAlbum(@RequestBody Album albumToAdd){
+        albumStorage.saveAlbum(albumToAdd);
+        return albumStorage.retrieveAllAlbums();
+    }
 }
