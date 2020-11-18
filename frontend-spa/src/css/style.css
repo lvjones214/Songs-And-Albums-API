@@ -10,6 +10,10 @@ html {
     color: var(--dark-blue);
 }
 
+.about-button {
+    background-color: var(--white);
+}
+
 .current-song {
     font-weight: bold;
 }
@@ -48,25 +52,78 @@ html {
     letter-spacing: 2px;
 }
 
-input[type=text]{
+input[type=text] {
     width: 80%;
     padding: 1rem;
     border: none;
-    border-bottom:2px solid var(--dark-blue); 
+    border-bottom: 2px solid var(--dark-blue);
     background-color: var(--red);
     margin: 15px;
 }
 
-input[type=text]:focus{
+input[type=text]:focus {
     background-color: var(--white);
 }
 
-input[type=text]::placeholder
-{
+input[type=text]::placeholder {
     color: var(--dark-blue);
 }
 
-.form-submit{
+.form-submit {
     background-color: var(--dark-blue);
-    
+    border: none;
+    font-size: 20px;
+    color: var(--white);
+    padding: 15px 20px;
+    width: 50%;
+    border-radius: 5px;
+}
+
+.new-submission {
+    font-family: Righteous;
+}
+
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: visible;
+}
+
+.flip-card-front {
+    background-color: var(--white);
+    color: black;
+    border-radius: 7px;
+}
+
+.flip-card-back {
+    background-color: var(--red);
+    color: var(--white);
+    transform: rotateY(180deg);
+    border-radius: 7px;
+}
+
+.song-card-list {
+    list-style: none;
 }
