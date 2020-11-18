@@ -34,7 +34,7 @@ const albumDetails = function(album) {
 
         // let albumElementFlipCardFront = document.createElement("div");
         // albumElementFlipCardFront.classList.add("flip-card-front");
-        
+
         let albumElementFlipCard = document.createElement("div");
         albumElementFlipCard.classList.add("flip-card");
         albumInfo.appendChild(albumElementFlipCard);
@@ -47,14 +47,14 @@ const albumDetails = function(album) {
         albumElementFlipCardFront.classList.add("flip-card-front");
         albumElementFlipCardInner.appendChild(albumElementFlipCardFront);
 
-        let albumElementImage = document.createElement("img");
-        albumElementImage.classList.add("album-cover-img");
-        albumElementImage.innerHTML= `src = ${album.image} alt="unavailable"`
-        albumElementFlipCardFront.appendChild(albumElementImage);
+        // let albumElementImage = document.createElement("img");
+        // albumElementImage.classList.add("album-cover-img");
+        // albumElementImage.innerHTML= `src = ${album.image} alt="unavailable"`
+        // albumElementFlipCardFront.appendChild(albumElementImage);
 
         let albumElementFlipCardBack = document.createElement("div");
         albumElementFlipCardBack.classList.add("flip-card-back");
-        albumElementImage.appendChild(albumElementFlipCardBack);
+        albumElementFlipCardFront.appendChild(albumElementFlipCardBack);
 
         let albumElementSongCardList = document.createElement("ul");
         albumElementSongCardList.classList.add("song-card-list");

@@ -108,12 +108,13 @@ input[type=text]::placeholder {
     position: absolute;
     width: 100%;
     height: 100%;
-    backface-visibility: hidden;
+    backface-visibility: visible;
 }
 
 .flip-card-front {
     background-color: var(--white);
     color: black;
+    border-radius: 7px;
 }
 
 .flip-card-back {
