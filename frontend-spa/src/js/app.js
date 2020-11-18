@@ -13,8 +13,9 @@ import {
 
 
 //  console.log(albumDetails(allAlbums));
+document.querySelector('.container').appendChild(songList(allAlbums[0]));
 document.querySelector('.container').appendChild(albumDetails(allAlbums[0]));
-document.querySelector('.container').prepend(songList(allAlbums[0]));
+
 
 
 // const developerButton = document.querySelector(".add-song-button");
