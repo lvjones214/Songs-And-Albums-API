@@ -13,12 +13,12 @@ const songList = function(songs) {
         let songElementArtist = document.createElement("p");
         songElementArtist.classList.add("current-song-artist");
 
-    
+
         let songElementImage = document.createElement("img");
         songElementImage.classList.add("current-song-img");
-        songElementImage.addEventListener('click', ()=> alert('Will display Album details'));
+        songElementImage.addEventListener('click', () => alert('Will display Album details'));
 
-    
+
 
     });
 
@@ -26,7 +26,6 @@ const songList = function(songs) {
 }
 
 
-}
-export{
+export {
     songList
 }
