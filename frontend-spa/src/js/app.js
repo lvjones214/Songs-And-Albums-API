@@ -7,13 +7,8 @@ import {
     from "./sampleAllAlbumsjson.js";
 
 
- console.log(albumDetails(allAlbums));
-document.querySelector('.details').appendChild(albumDetails(allAlbums));
-
-
-
-
-
+//  console.log(albumDetails(allAlbums));
+document.querySelector('.details').prepend(albumDetails(allAlbums[0]));
 
 
 
