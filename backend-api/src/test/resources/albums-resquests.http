@@ -21,12 +21,12 @@ Content-Type: application/json
 }
 
 ### Add a Song
-PATCH http://localhost:8080/api/albums/1/songs
+PATCH http://localhost:8080/api/albums/2/songs
 Content-Type: application/json
 
 {
   "songName": "New Song",
   "image": "New Image",
-  "playTime": "New Playtime",
+  "playTime": "New Play Time",
   "artist": "New Artist"
 }
