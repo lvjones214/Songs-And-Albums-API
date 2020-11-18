@@ -8,7 +8,7 @@ import {
 
 
 //  console.log(albumDetails(allAlbums));
-document.querySelector('.details').prepend(albumDetails(allAlbums[0]));
+document.querySelector('.container').appendChild(albumDetails(allAlbums[0]));
 
 
 

@@ -112,7 +112,7 @@ input[type=text]::placeholder {
 }
 
 .flip-card-front {
-    background-color: #bbb;
+    background-color: var(--white);
     color: black;
 }
 
