@@ -26,7 +26,7 @@ const albumDetails = function(album) {
        
         let albumElementFlipCard = document.createElement("div");
         albumElementFlipCard.classList.add("flip-card");
-        albumInfo.appendChild(albumElementFlipCard);
+        albumDetails.appendChild(albumElementFlipCard);
 
         let albumElementFlipCardInner = document.createElement("div");
         albumElementFlipCardInner.classList.add("flip-card-inner");
@@ -56,8 +56,42 @@ const albumDetails = function(album) {
             albumElementSongCardList.appendChild(albumElementSongCardItems);
         });
 
-    // const commentsBlock = document.createElement("div");
-    // commentsBlock.classList.add("comments-block");
+        //comments
+    const commentsBlock = document.createElement("div");
+    commentsBlock.classList.add("comments-block");
+    albumDetails.appendChild(commentsBlock);
+
+    const commentsDetails = document.createElement("h3");
+    commentsDetails.classList.add("comments");
+    commentsDetails.innerText= "Comments:";
+    commentsBlock.appendChild(commentsDetails);
+
+    const comments = document.querySelector(".comments");
+    comments.innerHTML =` <p>Classic album</p>
+    <p>This album takes me back to my angsty teen years!</p>
+    <p>Super great song, love it!</p>
+    <p>Meh.</p> `;
+    commentsDetails.appendChild(comments);
+
+    //ratings
+
+    const ratingsBlock = document.createElement("div");
+    ratingsBlock.classList.add("ratings-block");
+    albumDetails.appendChild(ratingsBlock);
+
+    const ratingsDetails = document.createElement("h3");
+    ratingsDetails.classList.add("ratings");
+    ratingsDetails.innerText= "Ratings:";
+    ratingsBlock.appendChild(ratingsDetails);
+
+    const ratings = document.querySelector(".ratings");
+    ratings.innerHTML =` <p>Classic album</p>
+    <p>This album takes me back to my angsty teen years!</p>
+    <p>Super great song, love it!</p>
+    <p>Meh.</p> `;
+    ratingsDetails.appendChild(ratings);
+
+    
 
 
     return albumDetails;
