@@ -41,6 +41,8 @@ public class Populator implements CommandLineRunner {
         albumStorage.saveAlbum(okComputer);
         Album theSign = new Album("The Sign", "https://upload.wikimedia.org/wikipedia/en/d/d9/AceofBaseTheSignAlbumcover.jpg", "Ace of Base", "Arista");
         albumStorage.saveAlbum(theSign);
+        Album friendsForever = new Album("Friends Forever", "https://di2ponv0v5otw.cloudfront.net/posts/2019/07/08/5d23824c2e7c2fea91eeefd0/m_5d23827f9d3b78f90ce86f7b.jpg", "Zach Attack", "Funko");
+        albumStorage.saveAlbum(friendsForever);
 
 
         songRepo.save(new Song(ratm, "Bombtrack", "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Rage_Against_The_Machine.jpg/1280px-Rage_Against_The_Machine.jpg", "04:04", "Rage Against the Machine"));
@@ -165,6 +167,10 @@ public class Populator implements CommandLineRunner {
         songRepo.save(new Song(theSign, "Voulez-Vous Danser", "https://static.billboard.com/files/media/ace-of-base-2000-billboard-650-compressed.jpg", "3:21", "Ace of Base" ));
         songRepo.save(new Song(theSign, "My Mind (Mindless mix)", "https://static.billboard.com/files/media/ace-of-base-2000-billboard-650-compressed.jpg", "4:10", "Ace of Base" ));
         songRepo.save(new Song(theSign, "All That She Wants (Banghra version)", "https://static.billboard.com/files/media/ace-of-base-2000-billboard-650-compressed.jpg", "4:14", "Ace of Base" ));
+        songRepo.save(new Song(friendsForever, "Did We Ever Have a Chance?", "https://static1.srcdn.com/wordpress/wp-content/uploads/2020/11/saved-by-the-bell-cast-zack-attack.jpg?q=50&fit=crop&w=943&h=500", "1:55", "Zack Attack" ));
+        songRepo.save(new Song(friendsForever, "Friends Forever", "https://static1.srcdn.com/wordpress/wp-content/uploads/2020/11/saved-by-the-bell-cast-zack-attack.jpg?q=50&fit=crop&w=943&h=500", "2:17", "Zack Attack" ));
+        songRepo.save(new Song(friendsForever, "Let's Stay Together", "https://static1.srcdn.com/wordpress/wp-content/uploads/2020/11/saved-by-the-bell-cast-zack-attack.jpg?q=50&fit=crop&w=943&h=500", "2:66", "Zack Attack" ));
+        songRepo.save(new Song(friendsForever, "Saved by the Bell Theme", "https://static1.srcdn.com/wordpress/wp-content/uploads/2020/11/saved-by-the-bell-cast-zack-attack.jpg?q=50&fit=crop&w=943&h=500", "2:56", "Zack Attack" ));
 
     }
 
