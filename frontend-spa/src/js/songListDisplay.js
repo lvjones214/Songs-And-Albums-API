@@ -1,14 +1,15 @@
-import{
+import {
     albumDetails
-}from "./albumDetails.js"
+} from "./albumDetails.js"
+import { songDetails } from "./songDetails.js";
 
 const songList = function(albums) {
     const songList = document.querySelector(".song-list");
 
-    albums.forEach(album =>{
-    const songBlock = document.createElement("div");
-    songBlock.classList.add("song-block");
-    songList.appendChild(songBlock);
+    albums.forEach(album => {
+        const songBlock = document.createElement("div");
+        songBlock.classList.add("song-block");
+        songList.appendChild(songBlock);
 
         const currentSong = document.createElement("p");
         currentSong.classList.add("current-song");
@@ -19,23 +20,11 @@ const songList = function(albums) {
         currentSongImg.setAttribute("alt", "unavailable");
         songBlock.appendChild(currentSong);
         songBlock.appendChild(currentSongImg);
-        currentSongImg.addEventListener('click', ()=> displaySingleSong(album.songs[0]));
-        currentSong.addEventListener('click',()=> albumDetails(album));
+        currentSong.addEventListener('click', () => songDetails(album.songs[0]));
+        currentSongImg.addEventListener('click', () => albumDetails(album));
     })
-
-    const displaySingleSong = function(song){
-        alert(`This will eventually work`)
-    }
-    
-    const displaySingleAlbum = function(album){
-        alert(`This will eventually work`)
-
-    }
-
-
     return songList;
 }
-
 
 export {
     songList
