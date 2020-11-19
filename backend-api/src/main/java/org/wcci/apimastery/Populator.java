@@ -27,6 +27,8 @@ public class Populator implements CommandLineRunner {
         albumStorage.saveAlbum(jaglittlepill);
         Album amo = new Album("amo", "https://upload.wikimedia.org/wikipedia/en/9/97/AmoBringMetheHorizon.png", "Bring Me The Horizon", "Sony");
         albumStorage.saveAlbum(amo);
+        Album underTheTableAndDreaming = new Album("underTheTableAndDreaming", "https://upload.wikimedia.org/wikipedia/en/d/d3/Dave_Matthews_Band_-_Under_the_Table_and_Dreaming.jpg", "Dave Matthews Band", "RCA");
+        albumStorage.saveAlbum(underTheTableAndDreaming);
 
 
         songRepo.save(new Song(ratm, "Bombtrack", "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Rage_Against_The_Machine.jpg/1280px-Rage_Against_The_Machine.jpg", "04:04", "Rage Against the Machine"));
@@ -65,6 +67,18 @@ public class Populator implements CommandLineRunner {
         songRepo.save(new Song(amo, "Mother Tongue", "https://cdn.mos.cms.futurecdn.net/kEPbSda8Q6siatsfRmg92V-970-80.jpg.webp", "3:37","Bring Me The Horizon" ));
         songRepo.save(new Song(amo, "Heavy Metal", "https://cdn.mos.cms.futurecdn.net/kEPbSda8Q6siatsfRmg92V-970-80.jpg.webp", "4:00","Bring Me The Horizon" ));
         songRepo.save(new Song(amo, "I Don't Know What to Say", "https://cdn.mos.cms.futurecdn.net/kEPbSda8Q6siatsfRmg92V-970-80.jpg.webp", "5:52","Bring Me The Horizon" ));
+        songRepo.save(new Song(underTheTableAndDreaming, "The Best of What's Around", "https://static.spin.com/files/field/image/090218-dave-matthew-band.jpg", "4:17", "Dave Matthews Band"));
+        songRepo.save(new Song(underTheTableAndDreaming, "What Would You Say", "https://static.spin.com/files/field/image/090218-dave-matthew-band.jpg", "3:43", "Dave Matthews Band"));
+        songRepo.save(new Song(underTheTableAndDreaming, "Satellite", "https://static.spin.com/files/field/image/090218-dave-matthew-band.jpg", "4:52", "Dave Matthews Band"));
+        songRepo.save(new Song(underTheTableAndDreaming, "Rhyme & Reason", "https://static.spin.com/files/field/image/090218-dave-matthew-band.jpg", "5:16", "Dave Matthews Band"));
+        songRepo.save(new Song(underTheTableAndDreaming, "Typical Situation", "https://static.spin.com/files/field/image/090218-dave-matthew-band.jpg", "5:59", "Dave Matthews Band"));
+        songRepo.save(new Song(underTheTableAndDreaming, "Dancing Nancies", "https://static.spin.com/files/field/image/090218-dave-matthew-band.jpg", "6:08", "Dave Matthews Band"));
+        songRepo.save(new Song(underTheTableAndDreaming, "Ants Marching", "https://static.spin.com/files/field/image/090218-dave-matthew-band.jpg", "4:31", "Dave Matthews Band"));
+        songRepo.save(new Song(underTheTableAndDreaming, "Lover Lay Down", "https://static.spin.com/files/field/image/090218-dave-matthew-band.jpg", "5:38", "Dave Matthews Band"));
+        songRepo.save(new Song(underTheTableAndDreaming, "Jimi Thing", "https://static.spin.com/files/field/image/090218-dave-matthew-band.jpg", "5:57", "Dave Matthews Band"));
+        songRepo.save(new Song(underTheTableAndDreaming, "Warehouse", "https://static.spin.com/files/field/image/090218-dave-matthew-band.jpg", "4:35", "Dave Matthews Band"));
+        songRepo.save(new Song(underTheTableAndDreaming, "The Best of What's Around", "https://static.spin.com/files/field/image/090218-dave-matthew-band.jpg", "4:17", "Dave Matthews Band"));
+        songRepo.save(new Song(underTheTableAndDreaming, "#34", "https://static.spin.com/files/field/image/090218-dave-matthew-band.jpg", "4:58", "Dave Matthews Band"));
     }
 
 }
