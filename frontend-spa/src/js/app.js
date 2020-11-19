@@ -5,11 +5,14 @@ import {
 import {
     allAlbums
 }
-    from "./sampleAllAlbumsjson.js";
+from "./sampleAllAlbumsjson.js";
 
 import {
     songList
 } from "./songListDisplay.js"
+import {
+    songDetails
+} from "./songDetails.js"
 
 
 //  console.log(albumDetails(allAlbums));
@@ -18,6 +21,7 @@ fetch("http://localhost:8080/api/albums")
     .then(allAlbums => {
         document.querySelector('.container').appendChild(songList(allAlbums));
         document.querySelector('.container').appendChild(albumDetails(allAlbums[0]));
+        document.querySelector(".container").appendChild(songDetails(allAlbums));
     })
 
 
