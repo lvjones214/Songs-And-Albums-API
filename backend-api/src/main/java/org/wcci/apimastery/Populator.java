@@ -37,6 +37,8 @@ public class Populator implements CommandLineRunner {
         albumStorage.saveAlbum((randomAccessMemories));
         Album newsOfTheWorld = new Album("News of the World", "https://upload.wikimedia.org/wikipedia/en/e/ea/Queen_News_Of_The_World.png", "Queen", "Elektra");
         albumStorage.saveAlbum(newsOfTheWorld);
+        Album okComputer = new Album("OK Computer", "https://upload.wikimedia.org/wikipedia/en/b/ba/Radioheadokcomputer.png", "Radio Head", "Capitol");
+        albumStorage.saveAlbum(okComputer);
 
 
         songRepo.save(new Song(ratm, "Bombtrack", "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Rage_Against_The_Machine.jpg/1280px-Rage_Against_The_Machine.jpg", "04:04", "Rage Against the Machine"));
@@ -137,6 +139,19 @@ public class Populator implements CommandLineRunner {
         songRepo.save(new Song(newsOfTheWorld, "Who Needs You", "https://www.udiscovermusic.com/wp-content/uploads/2018/08/GH008-web-optimised-1000.jpg", "3:05", "Queen" ));
         songRepo.save(new Song(newsOfTheWorld, "It's Late", "https://www.udiscovermusic.com/wp-content/uploads/2018/08/GH008-web-optimised-1000.jpg", "6:26", "Queen" ));
         songRepo.save(new Song(newsOfTheWorld, "My Melancholy Blues", "https://www.udiscovermusic.com/wp-content/uploads/2018/08/GH008-web-optimised-1000.jpg", "3:29", "Queen" ));
+        songRepo.save(new Song(okComputer, "Airbag", "https://media.npr.org/assets/img/2019/06/11/gettyimages-80530629-f148b8e014c67ed40c18fa8d2f50aa5ee7d87d67-s700-c85.jpg", "4:44", "Radio Head" ));
+        songRepo.save(new Song(okComputer, "Paranoid Android", "https://media.npr.org/assets/img/2019/06/11/gettyimages-80530629-f148b8e014c67ed40c18fa8d2f50aa5ee7d87d67-s700-c85.jpg", "6:23", "Radio Head" ));
+        songRepo.save(new Song(okComputer, "Subterranean Homesick Alien", "https://media.npr.org/assets/img/2019/06/11/gettyimages-80530629-f148b8e014c67ed40c18fa8d2f50aa5ee7d87d67-s700-c85.jpg", "4:27", "Radio Head" ));
+        songRepo.save(new Song(okComputer, "Exit Music (For a Film)", "https://media.npr.org/assets/img/2019/06/11/gettyimages-80530629-f148b8e014c67ed40c18fa8d2f50aa5ee7d87d67-s700-c85.jpg", "4:24", "Radio Head" ));
+        songRepo.save(new Song(okComputer, "Let Down", "https://media.npr.org/assets/img/2019/06/11/gettyimages-80530629-f148b8e014c67ed40c18fa8d2f50aa5ee7d87d67-s700-c85.jpg", "4:59", "Radio Head" ));
+        songRepo.save(new Song(okComputer, "Karma Police", "https://media.npr.org/assets/img/2019/06/11/gettyimages-80530629-f148b8e014c67ed40c18fa8d2f50aa5ee7d87d67-s700-c85.jpg", "4:21", "Radio Head" ));
+        songRepo.save(new Song(okComputer, "Fitter Happier", "https://media.npr.org/assets/img/2019/06/11/gettyimages-80530629-f148b8e014c67ed40c18fa8d2f50aa5ee7d87d67-s700-c85.jpg", "1:57", "Radio Head" ));
+        songRepo.save(new Song(okComputer, "Electioneering", "https://media.npr.org/assets/img/2019/06/11/gettyimages-80530629-f148b8e014c67ed40c18fa8d2f50aa5ee7d87d67-s700-c85.jpg", "3:50", "Radio Head" ));
+        songRepo.save(new Song(okComputer, "Climbing Up the Walls", "https://media.npr.org/assets/img/2019/06/11/gettyimages-80530629-f148b8e014c67ed40c18fa8d2f50aa5ee7d87d67-s700-c85.jpg", "4:45", "Radio Head" ));
+        songRepo.save(new Song(okComputer, "No Surprises", "https://media.npr.org/assets/img/2019/06/11/gettyimages-80530629-f148b8e014c67ed40c18fa8d2f50aa5ee7d87d67-s700-c85.jpg", "3:48", "Radio Head" ));
+        songRepo.save(new Song(okComputer, "Lucky", "https://media.npr.org/assets/img/2019/06/11/gettyimages-80530629-f148b8e014c67ed40c18fa8d2f50aa5ee7d87d67-s700-c85.jpg", "4:19", "Radio Head" ));
+        songRepo.save(new Song(okComputer, "The Tourist", "https://media.npr.org/assets/img/2019/06/11/gettyimages-80530629-f148b8e014c67ed40c18fa8d2f50aa5ee7d87d67-s700-c85.jpg", "5:24", "Radio Head" ));
+
     }
 
 }
