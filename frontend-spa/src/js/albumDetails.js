@@ -1,6 +1,6 @@
 const albumDetails = function(album) {
     const albumDetails = document.querySelector(".details");
-
+    albumDetails.innerHTML = "";
     const detailsHeader = document.createElement("h2");
     detailsHeader.innerText = `About: ${album.albumName}`;
     albumDetails.appendChild(detailsHeader);
@@ -49,7 +49,7 @@ const albumDetails = function(album) {
     let albumElementSongCardList = document.createElement("ul");
     albumElementSongCardList.classList.add("song-card-list");
     albumElementFlipCardBack.appendChild(albumElementSongCardList);
-
+console.log(album)
     album.songs.forEach(song => {
         const albumElementSongCardItems = document.createElement("li");
         albumElementSongCardItems.innerText = song.songName;
@@ -115,6 +115,8 @@ const albumDetails = function(album) {
 
     return albumDetails;
 }
+
+
 export {
     albumDetails
 }
