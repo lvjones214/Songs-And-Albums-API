@@ -105,9 +105,9 @@ public class Populator implements CommandLineRunner {
         songRepo.save(new Song(abbeyRoad, "Mean Mr. Mustard", "https://cdn.britannica.com/18/136518-050-CD0E49C6/The-Beatles-Ringo-Starr-Paul-McCartney-George.jpg", "1:06", "The Beatles" ));
         songRepo.save(new Song(abbeyRoad, "Polythene Pam", "https://cdn.britannica.com/18/136518-050-CD0E49C6/The-Beatles-Ringo-Starr-Paul-McCartney-George.jpg", "1:13", "The Beatles" ));
         songRepo.save(new Song(abbeyRoad, "She Came In Through the Bathroom Window", "https://cdn.britannica.com/18/136518-050-CD0E49C6/The-Beatles-Ringo-Starr-Paul-McCartney-George.jpg", "1:58", "The Beatles" ));
-        songRepo.save(new Song(abbeyRoad, "Mean Mr. Mustard", "https://cdn.britannica.com/18/136518-050-CD0E49C6/The-Beatles-Ringo-Starr-Paul-McCartney-George.jpg", "1:06", "The Beatles" ));
-        songRepo.save(new Song(abbeyRoad, "Mean Mr. Mustard", "https://cdn.britannica.com/18/136518-050-CD0E49C6/The-Beatles-Ringo-Starr-Paul-McCartney-George.jpg", "1:06", "The Beatles" ));
-        songRepo.save(new Song(abbeyRoad, "Mean Mr. Mustard", "https://cdn.britannica.com/18/136518-050-CD0E49C6/The-Beatles-Ringo-Starr-Paul-McCartney-George.jpg", "1:06", "The Beatles" ));
+        songRepo.save(new Song(abbeyRoad, "Golden Slumbers", "https://cdn.britannica.com/18/136518-050-CD0E49C6/The-Beatles-Ringo-Starr-Paul-McCartney-George.jpg", "1:31", "The Beatles" ));
+        songRepo.save(new Song(abbeyRoad, "Golden Slumbers", "https://cdn.britannica.com/18/136518-050-CD0E49C6/The-Beatles-Ringo-Starr-Paul-McCartney-George.jpg", "1:06", "The Beatles" ));
+        songRepo.save(new Song(abbeyRoad, "Carry That Weight", "https://cdn.britannica.com/18/136518-050-CD0E49C6/The-Beatles-Ringo-Starr-Paul-McCartney-George.jpg", "1:36", "The Beatles" ));
         songRepo.save(new Song(abbeyRoad, "Mean Mr. Mustard", "https://cdn.britannica.com/18/136518-050-CD0E49C6/The-Beatles-Ringo-Starr-Paul-McCartney-George.jpg", "1:06", "The Beatles" ));
     }
 
