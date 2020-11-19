@@ -31,6 +31,8 @@ public class Populator implements CommandLineRunner {
         albumStorage.saveAlbum(underTheTableAndDreaming);
         Album bandOfGypsys = new Album("Band of Gypsys", "https://upload.wikimedia.org/wikipedia/en/5/5c/Band_of_Gypsys_album.jpg", "Jimmy Hendrix", "Capitol");
         albumStorage.saveAlbum(bandOfGypsys);
+        Album abbeyRoad = new Album("Abbey Road", "https://upload.wikimedia.org/wikipedia/en/4/42/Beatles_-_Abbey_Road.jpg", "The Beatles", "Apple");
+        albumStorage.saveAlbum(abbeyRoad);
 
 
         songRepo.save(new Song(ratm, "Bombtrack", "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Rage_Against_The_Machine.jpg/1280px-Rage_Against_The_Machine.jpg", "04:04", "Rage Against the Machine"));
@@ -81,6 +83,32 @@ public class Populator implements CommandLineRunner {
         songRepo.save(new Song(underTheTableAndDreaming, "Warehouse", "https://static.spin.com/files/field/image/090218-dave-matthew-band.jpg", "4:35", "Dave Matthews Band"));
         songRepo.save(new Song(underTheTableAndDreaming, "The Best of What's Around", "https://static.spin.com/files/field/image/090218-dave-matthew-band.jpg", "4:17", "Dave Matthews Band"));
         songRepo.save(new Song(underTheTableAndDreaming, "#34", "https://static.spin.com/files/field/image/090218-dave-matthew-band.jpg", "4:58", "Dave Matthews Band"));
+        songRepo.save(new Song(bandOfGypsys, "Who Knows", "https://upload.wikimedia.org/wikipedia/commons/a/ae/Jimi_Hendrix_1967.png", "9:34", "Jimmy Hendrix" ));
+        songRepo.save(new Song(bandOfGypsys, "Machine Gun", "https://upload.wikimedia.org/wikipedia/commons/a/ae/Jimi_Hendrix_1967.png", "12:38", "Jimmy Hendrix" ));
+        songRepo.save(new Song(bandOfGypsys, "Changes", "https://upload.wikimedia.org/wikipedia/commons/a/ae/Jimi_Hendrix_1967.png", "5:11", "Jimmy Hendrix" ));
+        songRepo.save(new Song(bandOfGypsys, "Power to Love", "https://upload.wikimedia.org/wikipedia/commons/a/ae/Jimi_Hendrix_1967.png", "6:55", "Jimmy Hendrix" ));
+        songRepo.save(new Song(bandOfGypsys, "Message of Love", "https://upload.wikimedia.org/wikipedia/commons/a/ae/Jimi_Hendrix_1967.png", "5:24", "Jimmy Hendrix" ));
+        songRepo.save(new Song(bandOfGypsys, "We Gotta Live Together", "https://upload.wikimedia.org/wikipedia/commons/a/ae/Jimi_Hendrix_1967.png", "5:51", "Jimmy Hendrix" ));
+        songRepo.save(new Song(bandOfGypsys, "Hear My Train A Comin", "https://upload.wikimedia.org/wikipedia/commons/a/ae/Jimi_Hendrix_1967.png", "9:02", "Jimmy Hendrix" ));
+        songRepo.save(new Song(bandOfGypsys, "Foxy Lady", "https://upload.wikimedia.org/wikipedia/commons/a/ae/Jimi_Hendrix_1967.png", "6:33", "Jimmy Hendrix" ));
+        songRepo.save(new Song(bandOfGypsys, "Stop", "https://upload.wikimedia.org/wikipedia/commons/a/ae/Jimi_Hendrix_1967.png", "4:47", "Jimmy Hendrix" ));
+        songRepo.save(new Song(abbeyRoad, "Come Together", "https://cdn.britannica.com/18/136518-050-CD0E49C6/The-Beatles-Ringo-Starr-Paul-McCartney-George.jpg", "4:19", "The Beatles" ));
+        songRepo.save(new Song(abbeyRoad, "Something", "https://cdn.britannica.com/18/136518-050-CD0E49C6/The-Beatles-Ringo-Starr-Paul-McCartney-George.jpg", "4:19", "The Beatles" ));
+        songRepo.save(new Song(abbeyRoad, "Maxwell's Silver Hammer", "https://cdn.britannica.com/18/136518-050-CD0E49C6/The-Beatles-Ringo-Starr-Paul-McCartney-George.jpg", "3:27", "The Beatles" ));
+        songRepo.save(new Song(abbeyRoad, "Oh! Darling", "https://cdn.britannica.com/18/136518-050-CD0E49C6/The-Beatles-Ringo-Starr-Paul-McCartney-George.jpg", "3:27", "The Beatles" ));
+        songRepo.save(new Song(abbeyRoad, "Octopus's Garden", "https://cdn.britannica.com/18/136518-050-CD0E49C6/The-Beatles-Ringo-Starr-Paul-McCartney-George.jpg", "2:51", "The Beatles" ));
+        songRepo.save(new Song(abbeyRoad, "I Want You (She's So Heavy)", "https://cdn.britannica.com/18/136518-050-CD0E49C6/The-Beatles-Ringo-Starr-Paul-McCartney-George.jpg", "7:47", "The Beatles" ));
+        songRepo.save(new Song(abbeyRoad, "Here Comes the Sun", "https://cdn.britannica.com/18/136518-050-CD0E49C6/The-Beatles-Ringo-Starr-Paul-McCartney-George.jpg", "3:05", "The Beatles" ));
+        songRepo.save(new Song(abbeyRoad, "Because", "https://cdn.britannica.com/18/136518-050-CD0E49C6/The-Beatles-Ringo-Starr-Paul-McCartney-George.jpg", "2:45", "The Beatles" ));
+        songRepo.save(new Song(abbeyRoad, "You Never Give Me Your Money", "https://cdn.britannica.com/18/136518-050-CD0E49C6/The-Beatles-Ringo-Starr-Paul-McCartney-George.jpg", "4:03", "The Beatles" ));
+        songRepo.save(new Song(abbeyRoad, "Sun King", "https://cdn.britannica.com/18/136518-050-CD0E49C6/The-Beatles-Ringo-Starr-Paul-McCartney-George.jpg", "2:26", "The Beatles" ));
+        songRepo.save(new Song(abbeyRoad, "Mean Mr. Mustard", "https://cdn.britannica.com/18/136518-050-CD0E49C6/The-Beatles-Ringo-Starr-Paul-McCartney-George.jpg", "1:06", "The Beatles" ));
+        songRepo.save(new Song(abbeyRoad, "Polythene Pam", "https://cdn.britannica.com/18/136518-050-CD0E49C6/The-Beatles-Ringo-Starr-Paul-McCartney-George.jpg", "1:13", "The Beatles" ));
+        songRepo.save(new Song(abbeyRoad, "She Came In Through the Bathroom Window", "https://cdn.britannica.com/18/136518-050-CD0E49C6/The-Beatles-Ringo-Starr-Paul-McCartney-George.jpg", "1:58", "The Beatles" ));
+        songRepo.save(new Song(abbeyRoad, "Mean Mr. Mustard", "https://cdn.britannica.com/18/136518-050-CD0E49C6/The-Beatles-Ringo-Starr-Paul-McCartney-George.jpg", "1:06", "The Beatles" ));
+        songRepo.save(new Song(abbeyRoad, "Mean Mr. Mustard", "https://cdn.britannica.com/18/136518-050-CD0E49C6/The-Beatles-Ringo-Starr-Paul-McCartney-George.jpg", "1:06", "The Beatles" ));
+        songRepo.save(new Song(abbeyRoad, "Mean Mr. Mustard", "https://cdn.britannica.com/18/136518-050-CD0E49C6/The-Beatles-Ringo-Starr-Paul-McCartney-George.jpg", "1:06", "The Beatles" ));
+        songRepo.save(new Song(abbeyRoad, "Mean Mr. Mustard", "https://cdn.britannica.com/18/136518-050-CD0E49C6/The-Beatles-Ringo-Starr-Paul-McCartney-George.jpg", "1:06", "The Beatles" ));
     }
 
 }
