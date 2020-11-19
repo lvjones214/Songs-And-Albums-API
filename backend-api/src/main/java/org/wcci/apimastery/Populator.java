@@ -33,6 +33,10 @@ public class Populator implements CommandLineRunner {
         albumStorage.saveAlbum(bandOfGypsys);
         Album abbeyRoad = new Album("Abbey Road", "https://upload.wikimedia.org/wikipedia/en/4/42/Beatles_-_Abbey_Road.jpg", "The Beatles", "Apple");
         albumStorage.saveAlbum(abbeyRoad);
+        Album randomAccessMemories = new Album("Random Access Memories", "https://upload.wikimedia.org/wikipedia/en/a/a7/Random_Access_Memories.jpg", "Daft Punk", "Columbia");
+        albumStorage.saveAlbum((randomAccessMemories));
+        Album newsOfTheWorld = new Album("News of the World", "https://upload.wikimedia.org/wikipedia/en/e/ea/Queen_News_Of_The_World.png", "Queen", "Elektra");
+        albumStorage.saveAlbum(newsOfTheWorld);
 
 
         songRepo.save(new Song(ratm, "Bombtrack", "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Rage_Against_The_Machine.jpg/1280px-Rage_Against_The_Machine.jpg", "04:04", "Rage Against the Machine"));
@@ -105,10 +109,34 @@ public class Populator implements CommandLineRunner {
         songRepo.save(new Song(abbeyRoad, "Mean Mr. Mustard", "https://cdn.britannica.com/18/136518-050-CD0E49C6/The-Beatles-Ringo-Starr-Paul-McCartney-George.jpg", "1:06", "The Beatles" ));
         songRepo.save(new Song(abbeyRoad, "Polythene Pam", "https://cdn.britannica.com/18/136518-050-CD0E49C6/The-Beatles-Ringo-Starr-Paul-McCartney-George.jpg", "1:13", "The Beatles" ));
         songRepo.save(new Song(abbeyRoad, "She Came In Through the Bathroom Window", "https://cdn.britannica.com/18/136518-050-CD0E49C6/The-Beatles-Ringo-Starr-Paul-McCartney-George.jpg", "1:58", "The Beatles" ));
-        songRepo.save(new Song(abbeyRoad, "Golden Slumbers", "https://cdn.britannica.com/18/136518-050-CD0E49C6/The-Beatles-Ringo-Starr-Paul-McCartney-George.jpg", "1:31", "The Beatles" ));
         songRepo.save(new Song(abbeyRoad, "Golden Slumbers", "https://cdn.britannica.com/18/136518-050-CD0E49C6/The-Beatles-Ringo-Starr-Paul-McCartney-George.jpg", "1:06", "The Beatles" ));
         songRepo.save(new Song(abbeyRoad, "Carry That Weight", "https://cdn.britannica.com/18/136518-050-CD0E49C6/The-Beatles-Ringo-Starr-Paul-McCartney-George.jpg", "1:36", "The Beatles" ));
-        songRepo.save(new Song(abbeyRoad, "Mean Mr. Mustard", "https://cdn.britannica.com/18/136518-050-CD0E49C6/The-Beatles-Ringo-Starr-Paul-McCartney-George.jpg", "1:06", "The Beatles" ));
+        songRepo.save(new Song(abbeyRoad, "The End", "https://cdn.britannica.com/18/136518-050-CD0E49C6/The-Beatles-Ringo-Starr-Paul-McCartney-George.jpg", "2:05", "The Beatles" ));
+        songRepo.save(new Song(abbeyRoad, "Her Majesty (hidden track)", "https://cdn.britannica.com/18/136518-050-CD0E49C6/The-Beatles-Ringo-Starr-Paul-McCartney-George.jpg", "2:05", "The Beatles" ));
+        songRepo.save(new Song(randomAccessMemories, "Give Life Back to Music", "https://weraveyou.com/wp-content/uploads/2015/12/Daft-Punk.jpg", "4:34", "Daft Punk" ));
+        songRepo.save(new Song(randomAccessMemories, "The Game of Love", "https://weraveyou.com/wp-content/uploads/2015/12/Daft-Punk.jpg", "5:21", "Daft Punk" ));
+        songRepo.save(new Song(randomAccessMemories, "Giorgio by Moroder", "https://weraveyou.com/wp-content/uploads/2015/12/Daft-Punk.jpg", "9:04", "Daft Punk" ));
+        songRepo.save(new Song(randomAccessMemories, "Within", "https://weraveyou.com/wp-content/uploads/2015/12/Daft-Punk.jpg", "3:48", "Daft Punk" ));
+        songRepo.save(new Song(randomAccessMemories, "Instant Crush", "https://weraveyou.com/wp-content/uploads/2015/12/Daft-Punk.jpg", "5:37", "Daft Punk" ));
+        songRepo.save(new Song(randomAccessMemories, "Lose Yourself to Dance", "https://weraveyou.com/wp-content/uploads/2015/12/Daft-Punk.jpg", "5:53", "Daft Punk" ));
+        songRepo.save(new Song(randomAccessMemories, "Touch", "https://weraveyou.com/wp-content/uploads/2015/12/Daft-Punk.jpg", "8:18", "Daft Punk" ));
+        songRepo.save(new Song(randomAccessMemories, "Get Lucky", "https://weraveyou.com/wp-content/uploads/2015/12/Daft-Punk.jpg", "6:08", "Daft Punk" ));
+        songRepo.save(new Song(randomAccessMemories, "Beyond", "https://weraveyou.com/wp-content/uploads/2015/12/Daft-Punk.jpg", "4:50", "Daft Punk" ));
+        songRepo.save(new Song(randomAccessMemories, "Motherboard", "https://weraveyou.com/wp-content/uploads/2015/12/Daft-Punk.jpg", "5:41", "Daft Punk" ));
+        songRepo.save(new Song(randomAccessMemories, "Fragments of Time", "https://weraveyou.com/wp-content/uploads/2015/12/Daft-Punk.jpg", "4:39", "Daft Punk" ));
+        songRepo.save(new Song(randomAccessMemories, "Doin' It Right", "https://weraveyou.com/wp-content/uploads/2015/12/Daft-Punk.jpg", "4:11", "Daft Punk" ));
+        songRepo.save(new Song(randomAccessMemories, "Contact", "https://weraveyou.com/wp-content/uploads/2015/12/Daft-Punk.jpg", "6:21", "Daft Punk" ));
+        songRepo.save(new Song(newsOfTheWorld, "We Will Rock You", "https://www.udiscovermusic.com/wp-content/uploads/2018/08/GH008-web-optimised-1000.jpg", "2:01", "Queen" ));
+        songRepo.save(new Song(newsOfTheWorld, "We Are the Champions", "https://www.udiscovermusic.com/wp-content/uploads/2018/08/GH008-web-optimised-1000.jpg", "2:59", "Queen" ));
+        songRepo.save(new Song(newsOfTheWorld, "Sheer Heart Attack", "https://www.udiscovermusic.com/wp-content/uploads/2018/08/GH008-web-optimised-1000.jpg", "3:26", "Queen" ));
+        songRepo.save(new Song(newsOfTheWorld, "All Dead, All Dead", "https://www.udiscovermusic.com/wp-content/uploads/2018/08/GH008-web-optimised-1000.jpg", "3:10", "Queen" ));
+        songRepo.save(new Song(newsOfTheWorld, "Spread Your Wings", "https://www.udiscovermusic.com/wp-content/uploads/2018/08/GH008-web-optimised-1000.jpg", "4:34", "Queen" ));
+        songRepo.save(new Song(newsOfTheWorld, "Fight from the Inside", "https://www.udiscovermusic.com/wp-content/uploads/2018/08/GH008-web-optimised-1000.jpg", "3:03", "Queen" ));
+        songRepo.save(new Song(newsOfTheWorld, "Get Down, Make Love", "https://www.udiscovermusic.com/wp-content/uploads/2018/08/GH008-web-optimised-1000.jpg", "3:51", "Queen" ));
+        songRepo.save(new Song(newsOfTheWorld, "Sleeping on the Sidewalk", "https://www.udiscovermusic.com/wp-content/uploads/2018/08/GH008-web-optimised-1000.jpg", "3:06", "Queen" ));
+        songRepo.save(new Song(newsOfTheWorld, "Who Needs You", "https://www.udiscovermusic.com/wp-content/uploads/2018/08/GH008-web-optimised-1000.jpg", "3:05", "Queen" ));
+        songRepo.save(new Song(newsOfTheWorld, "It's Late", "https://www.udiscovermusic.com/wp-content/uploads/2018/08/GH008-web-optimised-1000.jpg", "6:26", "Queen" ));
+        songRepo.save(new Song(newsOfTheWorld, "My Melancholy Blues", "https://www.udiscovermusic.com/wp-content/uploads/2018/08/GH008-web-optimised-1000.jpg", "3:29", "Queen" ));
     }
 
 }
