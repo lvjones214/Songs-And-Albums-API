@@ -33,6 +33,16 @@ public class Populator implements CommandLineRunner {
         albumStorage.saveAlbum(bandOfGypsys);
         Album abbeyRoad = new Album("Abbey Road", "https://upload.wikimedia.org/wikipedia/en/4/42/Beatles_-_Abbey_Road.jpg", "The Beatles", "Apple");
         albumStorage.saveAlbum(abbeyRoad);
+        Album randomAccessMemories = new Album("Random Access Memories", "https://upload.wikimedia.org/wikipedia/en/a/a7/Random_Access_Memories.jpg", "Daft Punk", "Columbia");
+        albumStorage.saveAlbum((randomAccessMemories));
+        Album newsOfTheWorld = new Album("News of the World", "https://upload.wikimedia.org/wikipedia/en/e/ea/Queen_News_Of_The_World.png", "Queen", "Elektra");
+        albumStorage.saveAlbum(newsOfTheWorld);
+        Album okComputer = new Album("OK Computer", "https://upload.wikimedia.org/wikipedia/en/b/ba/Radioheadokcomputer.png", "Radio Head", "Capitol");
+        albumStorage.saveAlbum(okComputer);
+        Album theSign = new Album("The Sign", "https://upload.wikimedia.org/wikipedia/en/d/d9/AceofBaseTheSignAlbumcover.jpg", "Ace of Base", "Arista");
+        albumStorage.saveAlbum(theSign);
+        Album friendsForever = new Album("Friends Forever", "https://di2ponv0v5otw.cloudfront.net/posts/2019/07/08/5d23824c2e7c2fea91eeefd0/m_5d23827f9d3b78f90ce86f7b.jpg", "Zach Attack", "Funko");
+        albumStorage.saveAlbum(friendsForever);
 
 
         songRepo.save(new Song(ratm, "Bombtrack", "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Rage_Against_The_Machine.jpg/1280px-Rage_Against_The_Machine.jpg", "04:04", "Rage Against the Machine"));
@@ -105,10 +115,63 @@ public class Populator implements CommandLineRunner {
         songRepo.save(new Song(abbeyRoad, "Mean Mr. Mustard", "https://cdn.britannica.com/18/136518-050-CD0E49C6/The-Beatles-Ringo-Starr-Paul-McCartney-George.jpg", "1:06", "The Beatles" ));
         songRepo.save(new Song(abbeyRoad, "Polythene Pam", "https://cdn.britannica.com/18/136518-050-CD0E49C6/The-Beatles-Ringo-Starr-Paul-McCartney-George.jpg", "1:13", "The Beatles" ));
         songRepo.save(new Song(abbeyRoad, "She Came In Through the Bathroom Window", "https://cdn.britannica.com/18/136518-050-CD0E49C6/The-Beatles-Ringo-Starr-Paul-McCartney-George.jpg", "1:58", "The Beatles" ));
-        songRepo.save(new Song(abbeyRoad, "Golden Slumbers", "https://cdn.britannica.com/18/136518-050-CD0E49C6/The-Beatles-Ringo-Starr-Paul-McCartney-George.jpg", "1:31", "The Beatles" ));
         songRepo.save(new Song(abbeyRoad, "Golden Slumbers", "https://cdn.britannica.com/18/136518-050-CD0E49C6/The-Beatles-Ringo-Starr-Paul-McCartney-George.jpg", "1:06", "The Beatles" ));
         songRepo.save(new Song(abbeyRoad, "Carry That Weight", "https://cdn.britannica.com/18/136518-050-CD0E49C6/The-Beatles-Ringo-Starr-Paul-McCartney-George.jpg", "1:36", "The Beatles" ));
-        songRepo.save(new Song(abbeyRoad, "Mean Mr. Mustard", "https://cdn.britannica.com/18/136518-050-CD0E49C6/The-Beatles-Ringo-Starr-Paul-McCartney-George.jpg", "1:06", "The Beatles" ));
+        songRepo.save(new Song(abbeyRoad, "The End", "https://cdn.britannica.com/18/136518-050-CD0E49C6/The-Beatles-Ringo-Starr-Paul-McCartney-George.jpg", "2:05", "The Beatles" ));
+        songRepo.save(new Song(abbeyRoad, "Her Majesty (hidden track)", "https://cdn.britannica.com/18/136518-050-CD0E49C6/The-Beatles-Ringo-Starr-Paul-McCartney-George.jpg", "2:05", "The Beatles" ));
+        songRepo.save(new Song(randomAccessMemories, "Give Life Back to Music", "https://weraveyou.com/wp-content/uploads/2015/12/Daft-Punk.jpg", "4:34", "Daft Punk" ));
+        songRepo.save(new Song(randomAccessMemories, "The Game of Love", "https://weraveyou.com/wp-content/uploads/2015/12/Daft-Punk.jpg", "5:21", "Daft Punk" ));
+        songRepo.save(new Song(randomAccessMemories, "Giorgio by Moroder", "https://weraveyou.com/wp-content/uploads/2015/12/Daft-Punk.jpg", "9:04", "Daft Punk" ));
+        songRepo.save(new Song(randomAccessMemories, "Within", "https://weraveyou.com/wp-content/uploads/2015/12/Daft-Punk.jpg", "3:48", "Daft Punk" ));
+        songRepo.save(new Song(randomAccessMemories, "Instant Crush", "https://weraveyou.com/wp-content/uploads/2015/12/Daft-Punk.jpg", "5:37", "Daft Punk" ));
+        songRepo.save(new Song(randomAccessMemories, "Lose Yourself to Dance", "https://weraveyou.com/wp-content/uploads/2015/12/Daft-Punk.jpg", "5:53", "Daft Punk" ));
+        songRepo.save(new Song(randomAccessMemories, "Touch", "https://weraveyou.com/wp-content/uploads/2015/12/Daft-Punk.jpg", "8:18", "Daft Punk" ));
+        songRepo.save(new Song(randomAccessMemories, "Get Lucky", "https://weraveyou.com/wp-content/uploads/2015/12/Daft-Punk.jpg", "6:08", "Daft Punk" ));
+        songRepo.save(new Song(randomAccessMemories, "Beyond", "https://weraveyou.com/wp-content/uploads/2015/12/Daft-Punk.jpg", "4:50", "Daft Punk" ));
+        songRepo.save(new Song(randomAccessMemories, "Motherboard", "https://weraveyou.com/wp-content/uploads/2015/12/Daft-Punk.jpg", "5:41", "Daft Punk" ));
+        songRepo.save(new Song(randomAccessMemories, "Fragments of Time", "https://weraveyou.com/wp-content/uploads/2015/12/Daft-Punk.jpg", "4:39", "Daft Punk" ));
+        songRepo.save(new Song(randomAccessMemories, "Doin' It Right", "https://weraveyou.com/wp-content/uploads/2015/12/Daft-Punk.jpg", "4:11", "Daft Punk" ));
+        songRepo.save(new Song(randomAccessMemories, "Contact", "https://weraveyou.com/wp-content/uploads/2015/12/Daft-Punk.jpg", "6:21", "Daft Punk" ));
+        songRepo.save(new Song(newsOfTheWorld, "We Will Rock You", "https://www.udiscovermusic.com/wp-content/uploads/2018/08/GH008-web-optimised-1000.jpg", "2:01", "Queen" ));
+        songRepo.save(new Song(newsOfTheWorld, "We Are the Champions", "https://www.udiscovermusic.com/wp-content/uploads/2018/08/GH008-web-optimised-1000.jpg", "2:59", "Queen" ));
+        songRepo.save(new Song(newsOfTheWorld, "Sheer Heart Attack", "https://www.udiscovermusic.com/wp-content/uploads/2018/08/GH008-web-optimised-1000.jpg", "3:26", "Queen" ));
+        songRepo.save(new Song(newsOfTheWorld, "All Dead, All Dead", "https://www.udiscovermusic.com/wp-content/uploads/2018/08/GH008-web-optimised-1000.jpg", "3:10", "Queen" ));
+        songRepo.save(new Song(newsOfTheWorld, "Spread Your Wings", "https://www.udiscovermusic.com/wp-content/uploads/2018/08/GH008-web-optimised-1000.jpg", "4:34", "Queen" ));
+        songRepo.save(new Song(newsOfTheWorld, "Fight from the Inside", "https://www.udiscovermusic.com/wp-content/uploads/2018/08/GH008-web-optimised-1000.jpg", "3:03", "Queen" ));
+        songRepo.save(new Song(newsOfTheWorld, "Get Down, Make Love", "https://www.udiscovermusic.com/wp-content/uploads/2018/08/GH008-web-optimised-1000.jpg", "3:51", "Queen" ));
+        songRepo.save(new Song(newsOfTheWorld, "Sleeping on the Sidewalk", "https://www.udiscovermusic.com/wp-content/uploads/2018/08/GH008-web-optimised-1000.jpg", "3:06", "Queen" ));
+        songRepo.save(new Song(newsOfTheWorld, "Who Needs You", "https://www.udiscovermusic.com/wp-content/uploads/2018/08/GH008-web-optimised-1000.jpg", "3:05", "Queen" ));
+        songRepo.save(new Song(newsOfTheWorld, "It's Late", "https://www.udiscovermusic.com/wp-content/uploads/2018/08/GH008-web-optimised-1000.jpg", "6:26", "Queen" ));
+        songRepo.save(new Song(newsOfTheWorld, "My Melancholy Blues", "https://www.udiscovermusic.com/wp-content/uploads/2018/08/GH008-web-optimised-1000.jpg", "3:29", "Queen" ));
+        songRepo.save(new Song(okComputer, "Airbag", "https://media.npr.org/assets/img/2019/06/11/gettyimages-80530629-f148b8e014c67ed40c18fa8d2f50aa5ee7d87d67-s700-c85.jpg", "4:44", "Radio Head" ));
+        songRepo.save(new Song(okComputer, "Paranoid Android", "https://media.npr.org/assets/img/2019/06/11/gettyimages-80530629-f148b8e014c67ed40c18fa8d2f50aa5ee7d87d67-s700-c85.jpg", "6:23", "Radio Head" ));
+        songRepo.save(new Song(okComputer, "Subterranean Homesick Alien", "https://media.npr.org/assets/img/2019/06/11/gettyimages-80530629-f148b8e014c67ed40c18fa8d2f50aa5ee7d87d67-s700-c85.jpg", "4:27", "Radio Head" ));
+        songRepo.save(new Song(okComputer, "Exit Music (For a Film)", "https://media.npr.org/assets/img/2019/06/11/gettyimages-80530629-f148b8e014c67ed40c18fa8d2f50aa5ee7d87d67-s700-c85.jpg", "4:24", "Radio Head" ));
+        songRepo.save(new Song(okComputer, "Let Down", "https://media.npr.org/assets/img/2019/06/11/gettyimages-80530629-f148b8e014c67ed40c18fa8d2f50aa5ee7d87d67-s700-c85.jpg", "4:59", "Radio Head" ));
+        songRepo.save(new Song(okComputer, "Karma Police", "https://media.npr.org/assets/img/2019/06/11/gettyimages-80530629-f148b8e014c67ed40c18fa8d2f50aa5ee7d87d67-s700-c85.jpg", "4:21", "Radio Head" ));
+        songRepo.save(new Song(okComputer, "Fitter Happier", "https://media.npr.org/assets/img/2019/06/11/gettyimages-80530629-f148b8e014c67ed40c18fa8d2f50aa5ee7d87d67-s700-c85.jpg", "1:57", "Radio Head" ));
+        songRepo.save(new Song(okComputer, "Electioneering", "https://media.npr.org/assets/img/2019/06/11/gettyimages-80530629-f148b8e014c67ed40c18fa8d2f50aa5ee7d87d67-s700-c85.jpg", "3:50", "Radio Head" ));
+        songRepo.save(new Song(okComputer, "Climbing Up the Walls", "https://media.npr.org/assets/img/2019/06/11/gettyimages-80530629-f148b8e014c67ed40c18fa8d2f50aa5ee7d87d67-s700-c85.jpg", "4:45", "Radio Head" ));
+        songRepo.save(new Song(okComputer, "No Surprises", "https://media.npr.org/assets/img/2019/06/11/gettyimages-80530629-f148b8e014c67ed40c18fa8d2f50aa5ee7d87d67-s700-c85.jpg", "3:48", "Radio Head" ));
+        songRepo.save(new Song(okComputer, "Lucky", "https://media.npr.org/assets/img/2019/06/11/gettyimages-80530629-f148b8e014c67ed40c18fa8d2f50aa5ee7d87d67-s700-c85.jpg", "4:19", "Radio Head" ));
+        songRepo.save(new Song(okComputer, "The Tourist", "https://media.npr.org/assets/img/2019/06/11/gettyimages-80530629-f148b8e014c67ed40c18fa8d2f50aa5ee7d87d67-s700-c85.jpg", "5:24", "Radio Head" ));
+        songRepo.save(new Song(theSign, "All That She Wants", "https://static.billboard.com/files/media/ace-of-base-2000-billboard-650-compressed.jpg", "3:30", "Ace of Base" ));
+        songRepo.save(new Song(theSign, "Don't Turn Around", "https://static.billboard.com/files/media/ace-of-base-2000-billboard-650-compressed.jpg", "3:48", "Ace of Base" ));
+        songRepo.save(new Song(theSign, "Young and Proud", "https://static.billboard.com/files/media/ace-of-base-2000-billboard-650-compressed.jpg", "3:54", "Ace of Base" ));
+        songRepo.save(new Song(theSign, "The Sign", "https://static.billboard.com/files/media/ace-of-base-2000-billboard-650-compressed.jpg", "3:30", "Ace of Base" ));
+        songRepo.save(new Song(theSign, "Living in Danger", "https://static.billboard.com/files/media/ace-of-base-2000-billboard-650-compressed.jpg", "3:44", "Ace of Base" ));
+        songRepo.save(new Song(theSign, "Dancer in a Daydream", "https://static.billboard.com/files/media/ace-of-base-2000-billboard-650-compressed.jpg", "3:39", "Ace of Base" ));
+        songRepo.save(new Song(theSign, "Wheel of Fortune", "https://static.billboard.com/files/media/ace-of-base-2000-billboard-650-compressed.jpg", "3:54", "Ace of Base" ));
+        songRepo.save(new Song(theSign, "Waiting for Magic (Total remix 7)", "https://static.billboard.com/files/media/ace-of-base-2000-billboard-650-compressed.jpg", "3:49", "Ace of Base" ));
+        songRepo.save(new Song(theSign, "Happy Nation", "https://static.billboard.com/files/media/ace-of-base-2000-billboard-650-compressed.jpg", "4:13", "Ace of Base" ));
+        songRepo.save(new Song(theSign, "Voulez-Vous Danser", "https://static.billboard.com/files/media/ace-of-base-2000-billboard-650-compressed.jpg", "3:21", "Ace of Base" ));
+        songRepo.save(new Song(theSign, "My Mind (Mindless mix)", "https://static.billboard.com/files/media/ace-of-base-2000-billboard-650-compressed.jpg", "4:10", "Ace of Base" ));
+        songRepo.save(new Song(theSign, "All That She Wants (Banghra version)", "https://static.billboard.com/files/media/ace-of-base-2000-billboard-650-compressed.jpg", "4:14", "Ace of Base" ));
+        songRepo.save(new Song(friendsForever, "Did We Ever Have a Chance?", "https://static1.srcdn.com/wordpress/wp-content/uploads/2020/11/saved-by-the-bell-cast-zack-attack.jpg?q=50&fit=crop&w=943&h=500", "1:55", "Zack Attack" ));
+        songRepo.save(new Song(friendsForever, "Friends Forever", "https://static1.srcdn.com/wordpress/wp-content/uploads/2020/11/saved-by-the-bell-cast-zack-attack.jpg?q=50&fit=crop&w=943&h=500", "2:17", "Zack Attack" ));
+        songRepo.save(new Song(friendsForever, "Let's Stay Together", "https://static1.srcdn.com/wordpress/wp-content/uploads/2020/11/saved-by-the-bell-cast-zack-attack.jpg?q=50&fit=crop&w=943&h=500", "2:66", "Zack Attack" ));
+        songRepo.save(new Song(friendsForever, "Saved by the Bell Theme", "https://static1.srcdn.com/wordpress/wp-content/uploads/2020/11/saved-by-the-bell-cast-zack-attack.jpg?q=50&fit=crop&w=943&h=500", "2:56", "Zack Attack" ));
+
     }
 
 }
