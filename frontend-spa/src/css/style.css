@@ -90,7 +90,7 @@ input[type=text]::placeholder {
     height: 300px;
     perspective: 1000px;
     justify-self: right;
-    overflow-y: auto;
+    /* overflow-y: scroll; */
 }
 
 .flip-card-inner {
