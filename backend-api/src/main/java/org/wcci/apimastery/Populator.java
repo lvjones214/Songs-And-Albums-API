@@ -39,6 +39,8 @@ public class Populator implements CommandLineRunner {
         albumStorage.saveAlbum(newsOfTheWorld);
         Album okComputer = new Album("OK Computer", "https://upload.wikimedia.org/wikipedia/en/b/ba/Radioheadokcomputer.png", "Radio Head", "Capitol");
         albumStorage.saveAlbum(okComputer);
+        Album theSign = new Album("The Sign", "https://upload.wikimedia.org/wikipedia/en/d/d9/AceofBaseTheSignAlbumcover.jpg", "Ace of Base", "Arista");
+        albumStorage.saveAlbum(theSign);
 
 
         songRepo.save(new Song(ratm, "Bombtrack", "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Rage_Against_The_Machine.jpg/1280px-Rage_Against_The_Machine.jpg", "04:04", "Rage Against the Machine"));
@@ -151,6 +153,18 @@ public class Populator implements CommandLineRunner {
         songRepo.save(new Song(okComputer, "No Surprises", "https://media.npr.org/assets/img/2019/06/11/gettyimages-80530629-f148b8e014c67ed40c18fa8d2f50aa5ee7d87d67-s700-c85.jpg", "3:48", "Radio Head" ));
         songRepo.save(new Song(okComputer, "Lucky", "https://media.npr.org/assets/img/2019/06/11/gettyimages-80530629-f148b8e014c67ed40c18fa8d2f50aa5ee7d87d67-s700-c85.jpg", "4:19", "Radio Head" ));
         songRepo.save(new Song(okComputer, "The Tourist", "https://media.npr.org/assets/img/2019/06/11/gettyimages-80530629-f148b8e014c67ed40c18fa8d2f50aa5ee7d87d67-s700-c85.jpg", "5:24", "Radio Head" ));
+        songRepo.save(new Song(theSign, "All That She Wants", "https://static.billboard.com/files/media/ace-of-base-2000-billboard-650-compressed.jpg", "3:30", "Ace of Base" ));
+        songRepo.save(new Song(theSign, "Don't Turn Around", "https://static.billboard.com/files/media/ace-of-base-2000-billboard-650-compressed.jpg", "3:48", "Ace of Base" ));
+        songRepo.save(new Song(theSign, "Young and Proud", "https://static.billboard.com/files/media/ace-of-base-2000-billboard-650-compressed.jpg", "3:54", "Ace of Base" ));
+        songRepo.save(new Song(theSign, "The Sign", "https://static.billboard.com/files/media/ace-of-base-2000-billboard-650-compressed.jpg", "3:30", "Ace of Base" ));
+        songRepo.save(new Song(theSign, "Living in Danger", "https://static.billboard.com/files/media/ace-of-base-2000-billboard-650-compressed.jpg", "3:44", "Ace of Base" ));
+        songRepo.save(new Song(theSign, "Dancer in a Daydream", "https://static.billboard.com/files/media/ace-of-base-2000-billboard-650-compressed.jpg", "3:39", "Ace of Base" ));
+        songRepo.save(new Song(theSign, "Wheel of Fortune", "https://static.billboard.com/files/media/ace-of-base-2000-billboard-650-compressed.jpg", "3:54", "Ace of Base" ));
+        songRepo.save(new Song(theSign, "Waiting for Magic (Total remix 7)", "https://static.billboard.com/files/media/ace-of-base-2000-billboard-650-compressed.jpg", "3:49", "Ace of Base" ));
+        songRepo.save(new Song(theSign, "Happy Nation", "https://static.billboard.com/files/media/ace-of-base-2000-billboard-650-compressed.jpg", "4:13", "Ace of Base" ));
+        songRepo.save(new Song(theSign, "Voulez-Vous Danser", "https://static.billboard.com/files/media/ace-of-base-2000-billboard-650-compressed.jpg", "3:21", "Ace of Base" ));
+        songRepo.save(new Song(theSign, "My Mind (Mindless mix)", "https://static.billboard.com/files/media/ace-of-base-2000-billboard-650-compressed.jpg", "4:10", "Ace of Base" ));
+        songRepo.save(new Song(theSign, "All That She Wants (Banghra version)", "https://static.billboard.com/files/media/ace-of-base-2000-billboard-650-compressed.jpg", "4:14", "Ace of Base" ));
 
     }
 
