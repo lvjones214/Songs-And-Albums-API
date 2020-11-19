@@ -2,7 +2,7 @@ const songDetails = function(album) {
     const songDetails = document.querySelector(".details");
     songDetails.innerHTML = "";
     const songDetailsHeader = document.createElement("h2");
-    songDetailsHeader.innerText = `About: ${album.song.songName}`;
+    songDetailsHeader.innerText = `About: ${album.songs[0].songName}`;
     songDetails.appendChild(songDetailsHeader);
 
     const songInfo = document.createElement("div");
@@ -11,7 +11,7 @@ const songDetails = function(album) {
 
     let songElementName = document.createElement("p");
     songElementName.classList.add("song-name");
-    songElementName.innerText = `Song Name: ${album.song.songName}`
+    songElementName.innerText = `Song Name: ${album.songs[0].songName}`
 
     let songElementArtist = document.createElement("p");
     songElementArtist.classList.add("artist");
@@ -19,7 +19,7 @@ const songDetails = function(album) {
 
     let songElementPlayTime = document.createElement("p");
     songElementPlayTime.classList.add("song-playtime");
-    songElementPlayTime.innerText = `Duration: ${album.song.playTime}`;
+    songElementPlayTime.innerText = `Duration: ${album.songs[0].playTime}`;
     songInfo.appendChild(songElementName);
     songInfo.appendChild(songElementArtist);
     songInfo.appendChild(songElementPlayTime);
@@ -39,7 +39,7 @@ const songDetails = function(album) {
 
     let songElementImage = document.createElement("img");
     songElementImage.classList.add("artist-img");
-    songElementImage.setAttribute("src", album.song.image);
+    songElementImage.setAttribute("src", album.songs[0].image);
     songElementImage.setAttribute("alt", "unavailable");
     songElementFlipCardFront.appendChild(songElementImage);
 
@@ -57,7 +57,7 @@ const songDetails = function(album) {
     //comments
     const commentsBlock = document.createElement("div");
     commentsBlock.classList.add("comments-block");
-    albumDetails.appendChild(commentsBlock);
+    songDetails.appendChild(commentsBlock);
 
     const commentsDetails = document.createElement("h3");
     commentsDetails.classList.add("comments");
@@ -71,7 +71,7 @@ const songDetails = function(album) {
     //ratings
     const ratingsBlock = document.createElement("div");
     ratingsBlock.classList.add("ratings-block");
-    albumDetails.appendChild(ratingsBlock);
+    songDetails.appendChild(ratingsBlock);
 
     const ratingsDetails = document.createElement("h3");
     ratingsDetails.classList.add("ratings");
