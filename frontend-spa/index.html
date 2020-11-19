@@ -13,28 +13,28 @@
 
 <body>
     <header>
-        <img src="/frontend-spa/src/img/marvinDancing.gif" alt="marvinDancing" class="marvin">
+        <button class="about-button"><img src="/frontend-spa/src/img/info-icon.png"></button>
         <h1 class="website-title">Marvin's MetalHeads Music</h1>
-        <button class="menu-button"><img src="/frontend-spa/src/img/addson.png"></button>
+        <img src="/frontend-spa/src/img/marvinDancing.gif" alt="marvinDancing" class="marvin">
 
         <div class="backdrop"></div>
         <div class="modal">
             <div class="modal-actions">
                 <button type="button" class="exit">&times;</button></div>
 
-                <form class="new-submission" method="post"><select id="selection">
-                        <option value="album">Album </option>
-                        <option value="song">Song</option>
-                    </select>
-                    </select> <br> <input type="text" placeholder="Title"> <br> <input type="text"
-                        placeholder="Comments"> <br>
-                    <input type="text" placeholder="Rating"> <br>
-                    <button class="form-submit">submit</button>
-                </form>
+            <form class="new-submission" method="post"><select id="selection">
+                    <option value="song">Song</option>
+                </select>
+                <br>
+                <input type="text" placeholder="Album"> <br>
+                <input type="text" placeholder="Song Title"> <br>
+                <input type="text" placeholder="Artist"> <br>
+                <input type="text" placeholder="Duration"> <br>
+                <button class="form-submit">Submit</button>
+            </form>
         </div>
-
-
     </header>
+
     <div class="container">
 
         <div class="song-list">
@@ -77,23 +77,41 @@
         </div>
 
         <div class="details">
-            <h2>About</h2>
-            <div class="song-info">
-                <p class="title">Song: Killing In The Name</p>
-                <p class="album">Album: Rage Against The Machine</p>
+            <!-- <h2>About</h2>
+            <div class="album-info">
+                <p class="album-name">This is where the ALBUM NAME goes</p>
                 <p class="artist">Artist: Rage Against The Machine</p>
                 <p class="record-label">Label: Sony Music Entertainment</p>
-                <p class="duration">Length: 5:14</p>
-            </div>
-            <img src="/frontend-spa/src/img/ratm_rageagainst_cd (1).jpg" alt="rage-against-the-machine-album"
-                class="album-cover-img">
+            </div> -->
+            <!-- <div class="flip-card">
+                <div class="flip-card-inner">
+
+                    <div class="flip-card-front">
+                        <img src="/frontend-spa/src/img/ratm_rageagainst_cd (1).jpg" alt="rage-against-the-machine-album" class="album-cover-img">
+                    </div>
+                    
+                    <div class="flip-card-back">
+                        <ul class="song-card-list">
+                            <li>Song 1</li>
+                            <li>Song 2</li>
+                            <li>Song 3</li>
+                            <li>Song 4</li>
+                            <li>Song 5</li>
+                            
+                        </ul>
+                    </div>
+
+
+                </div>
+            </div> -->
+            
 
             <div class="comments-block">
                 <h3 class="comments">Comments:</h3>
                 <p>Classic album</p>
                 <p>This album takes me back to my angsty teen years!</p>
                 <p>Super great song, love it!</p>
-                <p>Meh.</p>
+                <p>Meh.</p> 
 
             </div>
 
@@ -105,15 +123,13 @@
 
             </div>
 
-            <form class="comments-ratings-form1" method="post"><input type="text" placeholder="Submit a comment"> <input
-                    type="submit"></form>
-            <form class="comments-ratings-form2" method="POST"><input type="text" placeholder="Submit a rating"> <input
-                    type="submit"></form>
-
+            <form class="comments-ratings-form1" method="post"><input type="text" placeholder="Submit a comment"> <input type="submit"></form>
+            <form class="comments-ratings-form2" method="POST"><input type="text" placeholder="Submit a rating"> <input type="submit"></form>
+            <button class="add-song-button">Add Song</button>
         </div>
     </div>
 
-    <script src="/frontend-spa/src/js/app.js"></script>
+    <script src="/frontend-spa/src/js/app.js" type="module"></script>
 </body>
 
 </html>

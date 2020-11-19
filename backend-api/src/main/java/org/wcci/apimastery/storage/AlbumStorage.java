@@ -19,7 +19,11 @@ public class AlbumStorage {
     public void saveAlbum(Album albumToSave) {
         albumRepo.save(albumToSave);
     }
-    public Iterable<Album>retrieveAllAblbums(){
+
+    public void deleteAlbumById(Long id){
+        albumRepo.deleteById(id);
+    }
+    public Iterable<Album>retrieveAllAlbums(){
         return albumRepo.findAll();
     }
 }

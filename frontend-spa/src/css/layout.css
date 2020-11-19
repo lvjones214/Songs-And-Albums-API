@@ -22,10 +22,24 @@ header {
     grid-column-gap: 50px;
 }
 
-.menu-button{
-    justify-self: right;
-
+.about-button img {
+    width: 15%;
 }
+
+.menu-button {
+    justify-self: left;
+}
+
+
+/* 
+.add-song-button {
+    width: 15%;
+} */
+
+
+/* .add-song-button img {
+    width: 25px;
+} */
 
 .website-title {
     justify-self: center;
@@ -56,6 +70,7 @@ header {
 
 .marvin {
     width: 60px;
+    justify-self: right;
 }
 
 .details {
@@ -65,15 +80,17 @@ header {
     align-items: center;
     padding: 2rem;
     margin: 7px;
+
 }
 
 .details img {
-    width: 250px;
+    width: 300px;
+    height: 300px;
     justify-self: right;
     border-radius: 7px;
 }
 
-h2 {
+h2{
     display: grid;
     grid-column-start: 1;
     grid-column-end: 3;
@@ -89,19 +106,18 @@ h2 {
     justify-self: right;
 }
 
-
-.backdrop{
+.backdrop {
     display: none;
     position: fixed;
     width: 100%;
     height: 100%;
-    top:0;
-    left:0;
-    background: rgba(0, 0,0, 0.5);  
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
     z-index: 100;
 }
 
-.modal{
+.modal {
     display: none;
     position: fixed;
     z-index: 200;
@@ -114,14 +130,17 @@ h2 {
     padding: 1rem;
 }
 
-.modal-actions{
+.modal-actions {
     display: flex;
     justify-content: flex-end;
 }
 
-.modal-actions button{
+.modal-actions button {
     font-size: 15px;
     padding: 3px 7px;
     border-radius: 5px;
 }
 
+.form-submit {
+    float: right;
+}
