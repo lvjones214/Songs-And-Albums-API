@@ -21,11 +21,13 @@ public class Song {
 
 
 
-    public Song(Album album, String songName, String image, String playTime){
+
+    public Song(Album album, String songName, String image, String playTime, String artist){
         this.album = album;
         this.songName = songName;
         this.image = image;
         this.playTime = playTime;
+        this.artist = artist;
     }
     protected Song(){}
 
@@ -35,6 +37,17 @@ public class Song {
 
     public Long getId() {
         return id;
+    }
+
+    public String getSongName() {
+        return songName;
+    }
+
+    public String getPlayTime() {
+        return playTime;
+    }
+    public String getImage() {
+        return image;
     }
 
     @Override
