@@ -78,14 +78,14 @@ const allAlbums = [{
     },
     {
         albumName: "Jagged Little Pill",
-        image: "/src/images/am.png",
+        image: "/frontend-spa/src/img/hitchhiker-symbol-icon.png",
         artist: "Alanis Morissette",
         recordLabel: "Maverick",
         songs: [{
                 songName: "You Learn",
                 artist: "Alanis Morissette",
                 playTime: "4:00",
-                image: "/src/images/am-song.png",
+                image: "/frontend-spa/src/img/hitchhiker-symbol-icon.png",
                 id: 20,
             },
             {

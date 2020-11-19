@@ -80,7 +80,6 @@ header {
     align-items: center;
     padding: 2rem;
     margin: 7px;
-
 }
 
 .details img {
@@ -90,7 +89,7 @@ header {
     border-radius: 7px;
 }
 
-h2{
+h2 {
     display: grid;
     grid-column-start: 1;
     grid-column-end: 3;
@@ -98,7 +97,7 @@ h2{
     text-align: center;
 }
 
-.comments-ratings-form2 {
+.ratings-form {
     justify-self: right;
 }
 
