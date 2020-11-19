@@ -29,6 +29,7 @@ public class Populator implements CommandLineRunner {
         albumStorage.saveAlbum(amo);
         Album underTheTableAndDreaming = new Album("underTheTableAndDreaming", "https://upload.wikimedia.org/wikipedia/en/d/d3/Dave_Matthews_Band_-_Under_the_Table_and_Dreaming.jpg", "Dave Matthews Band", "RCA");
         albumStorage.saveAlbum(underTheTableAndDreaming);
+//        Album bandOfGypsys = new Album();
 
 
         songRepo.save(new Song(ratm, "Bombtrack", "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Rage_Against_The_Machine.jpg/1280px-Rage_Against_The_Machine.jpg", "04:04", "Rage Against the Machine"));
